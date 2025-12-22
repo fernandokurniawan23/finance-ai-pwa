@@ -10,8 +10,9 @@ export interface Transaction {
   createdAt: number;
 }
 
+// Struktur pesan chat yang akan disimpan
 export interface ChatMessage {
-  id?: number;
+  id?: string;
   role: 'user' | 'assistant' | 'system';
   content: string;
   createdAt: number;
@@ -25,7 +26,7 @@ export interface Budget {
 
 class FinanceDB extends Dexie {
   transactions!: Table<Transaction>;
-  chats!: Table<ChatMessage>;
+  chats!: Table<ChatMessage>; 
   budgets!: Table<Budget>;
 
   constructor() {

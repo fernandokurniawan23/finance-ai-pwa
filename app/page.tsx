@@ -71,17 +71,19 @@ export default function Home() {
           </div>
         )}
 
-        {/* FOOTER */}
-        <div className="mt-12 py-8 text-center border-t border-gray-200">
-            <p className="text-xs font-semibold text-gray-500">
-                Fernando Kurniawan
+        {/* FOOTER*/}
+        <div className="mt-4 py-3 text-center border-t border-gray-100">
+          <div className="flex flex-col gap-0.5">
+            <p className="text-[11px] font-medium text-gray-500">
+              Fernando Kurniawan
             </p>
-            <p className="text-[10px] text-gray-400 mt-1">
-                &copy; {currentYear} Finance AI. All rights reserved.
+            <p className="text-[10px] text-gray-400">
+              &copy; {currentYear} Finance AI. All rights reserved.
             </p>
-            <p className="text-[9px] text-gray-300 mt-2">
-                v1.0.0 &bull; Local-First Architecture
+            <p className="text-[9px] text-gray-300">
+              v1.0.0 &bull; Local-First Architecture
             </p>
+          </div>
         </div>
       </main>
 
