@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Finance AI - Personal Finance Tracker PWA
 
-## Getting Started
+Aplikasi pencatat keuangan berbasis **Local-First PWA** yang terintegrasi dengan Artificial Intelligence untuk memberikan saran finansial cerdas berdasarkan data transaksi pengguna.
 
-First, run the development server:
+## 📱 Fitur Unggulan
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Berikut adalah antarmuka utama aplikasi:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. Dashboard & Pelacakan Transaksi
+<div align="center">
+  <img src="image/dashboard.png" alt="Dashboard Utama" width="300"/>
+</div>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Real-time Dashboard:** Menampilkan total saldo terkini dan riwayat transaksi (pemasukan/pengeluaran) secara *real-time*. Desain bersih memudahkan pemantauan arus kas harian.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### 2. Manajemen Budget Cerdas
+<div align="center">
+  <img src="image/budget.png" alt="Pengaturan Budget" width="300"/>
+</div>
 
-To learn more about Next.js, take a look at the following resources:
+**Smart Budgeting:** Pengguna dapat menetapkan batas maksimal pengeluaran per kategori (misal: Makanan & Minuman) untuk menjaga kesehatan finansial bulanan. Dilengkapi visualisasi *progress bar* pemakaian budget.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 3. Visualisasi & Analisis Data
+<div align="center">
+  <img src="image/chart.png" alt="Analisis Keuangan" width="300"/>
+</div>
 
-## Deploy on Vercel
+**Deep Analytics:** Visualisasi data menggunakan grafik batang (*Bar Chart*) untuk arus kas bulanan dan diagram lingkaran (*Pie Chart*) untuk komposisi pengeluaran. Membantu pengguna memahami pola konsumsi mereka secara visual.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4. AI Financial Advisor
+<div align="center">
+  <img src="image/ai_chat.png" alt="AI Advisor Chat" width="300"/>
+</div>
+
+**Personalized AI Consultant:** Fitur chat interaktif dengan AI yang menganalisis data keuangan pengguna untuk memberikan saran, hitungan investasi, atau strategi penghematan yang personal dan kontekstual.
+
+---
+
+### 5. Privasi & Keamanan Data (Local-First)
+<div align="center">
+  <img src="image/backup.png" alt="Backup dan Restore" width="300"/>
+</div>
+
+**Local-First Architecture:** Privasi adalah prioritas. Data tersimpan 100% di browser pengguna (IndexedDB/Dexie.js) tanpa server database terpusat. Dilengkapi fitur **Backup & Restore** (JSON) untuk keamanan data lintas perangkat.
+
+---
+
+## 🛠️ Tech Stack Highlights
+
+* **Framework:** Next.js 16 (App Router)
+* **Database:** Dexie.js (IndexedDB Wrapper).
+* **AI Integration:** Llama 3.
+* **Styling:** Tailwind CSS & Framer Motion.
+* **Architecture:** PWA (Progressive Web App) & Offline-first.
+
+<div align="center">
+  <img src="image/image_145a92.png" alt="Code Snippet" width="600"/>
+  <p><em>Implementasi sinkronisasi history chat dari Local DB ke UI state</em></p>
+</div>
+
+---
+
+<p align="center">
+  Created by <strong>Fernando Kurniawan</strong><br>
+  &copy; 2025 Finance AI. All rights reserved.
+</p>

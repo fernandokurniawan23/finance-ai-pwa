@@ -1,3 +1,4 @@
+// src/app/stats/page.tsx
 "use client";
 
 import { useLiveQuery } from "dexie-react-hooks";
@@ -19,7 +20,17 @@ import {
 import { ArrowLeft, TrendingUp, TrendingDown, CreditCard } from "lucide-react";
 import Link from "next/link";
 
-const COLORS = ["#171717", "#404040", "#737373", "#a3a3a3", "#d4d4d4", "#e5e5e5"];
+// Warna chart
+const COLORS = [
+  "#3b82f6", // Blue
+  "#10b981", // Emerald
+  "#f59e0b", // Amber
+  "#ef4444", // Red
+  "#8b5cf6", // Violet
+  "#ec4899", // Pink
+  "#06b6d4", // Cyan
+  "#6366f1"  // Indigo
+];
 
 // 1. DEFINISI TIPE DATA
 interface MonthlyChartData {
@@ -71,7 +82,7 @@ export default function StatsPage() {
     // 2. TIPE DATA (Record<string, MonthlyChartData>)
     }, {} as Record<string, MonthlyChartData>);
 
-    // 3. SORTING ().getTime() for Date)
+    // 3. SORTING (.getTime() untuk Date)
     return Object.values(grouped).sort((a, b) => a.rawDate.getTime() - b.rawDate.getTime());
   }, [transactions]);
 
