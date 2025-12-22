@@ -1,3 +1,4 @@
+// src/app/page.tsx
 "use client";
 
 import { useState } from "react";
@@ -11,6 +12,7 @@ import BottomNav from "@/components/BottomNav";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<"tracker" | "advisor">("tracker");
+  const currentYear = new Date().getFullYear();
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
@@ -24,12 +26,12 @@ export default function Home() {
            </Link>
         </div>
         
-        {/* Title*/}
+        {/* Title */}
         <h1 className="text-lg font-bold text-center tracking-tight text-black flex items-center justify-center gap-2">
           {activeTab === "tracker" ? (
             <>
               <Wallet className="w-5 h-5" />
-              <span>Finance Tracker</span>
+              <span>Finance</span>
             </>
           ) : (
             <>
@@ -39,7 +41,7 @@ export default function Home() {
           )}
         </h1>
 
-        {/* Actions (Budget & Stats) */}
+        {/* Actions */}
         <div className="w-16 flex justify-end gap-3">
           {activeTab === "tracker" && (
             <>
@@ -68,6 +70,19 @@ export default function Home() {
             <ChatInterface />
           </div>
         )}
+
+        {/* FOOTER */}
+        <div className="mt-12 py-8 text-center border-t border-gray-200">
+            <p className="text-xs font-semibold text-gray-500">
+                Fernando Kurniawan
+            </p>
+            <p className="text-[10px] text-gray-400 mt-1">
+                &copy; {currentYear} Finance AI. All rights reserved.
+            </p>
+            <p className="text-[9px] text-gray-300 mt-2">
+                v1.0.0 &bull; Local-First Architecture
+            </p>
+        </div>
       </main>
 
       <BottomNav currentTab={activeTab} onTabChange={setActiveTab} />

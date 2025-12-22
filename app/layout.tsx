@@ -4,17 +4,17 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// 1. Metadata Aplikasi
+// METADATA
 export const metadata: Metadata = {
   title: "Finance AI",
   description: "Smart Finance Tracker powered by Llama 3",
+  authors: [{ name: "Fernando Kurniawan" }],
   manifest: "/manifest.json",
   icons: {
-    apple: "/icon-192.png", // Icon untuk iPhone home screen
+    apple: "/icon-192.png",
   },
 };
 
-// 2. Viewport & Theme Color
 export const viewport: Viewport = {
   themeColor: "#ffffff",
   width: "device-width",
