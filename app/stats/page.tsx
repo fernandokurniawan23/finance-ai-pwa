@@ -7,34 +7,28 @@ import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, 
 import { ArrowLeft, TrendingUp, TrendingDown, CreditCard } from "lucide-react";
 import Link from "next/link";
 
-// Warna Chart yang Professional
 const COLORS = ["#171717", "#404040", "#737373", "#a3a3a3", "#d4d4d4", "#e5e5e5"];
 
 export default function StatsPage() {
-  // 1. Ambil Data Transaksi
   const transactions = useLiveQuery(() => db.transactions.toArray());
 
-  // 2. Pie Chart (Pengeluaran per Kategori)
+  // 1. Olah Data: Pie Chart
   const categoryData = useMemo(() => {
     if (!transactions) return [];
-    
-    // Hanya ambil pengeluaran
     const expenses = transactions.filter(t => t.type === "EXPENSE");
     
-    // Grouping
     const grouped = expenses.reduce((acc, curr) => {
       acc[curr.category] = (acc[curr.category] || 0) + curr.amount;
       return acc;
     }, {} as Record<string, number>);
 
-    // Array untuk Recharts & Sort Besar ke Kecil
     return Object.keys(grouped).map((key) => ({
       name: key,
       value: grouped[key]
     })).sort((a, b) => b.value - a.value);
   }, [transactions]);
 
-  // 3. Olah Data: Bar Chart (Trend Pemasukan vs Pengeluaran per Bulan)
+  // 2. Olah Data: Bar Chart
   const monthlyData = useMemo(() => {
     if (!transactions) return [];
 
@@ -53,7 +47,6 @@ export default function StatsPage() {
     return Object.values(grouped).sort((a: any, b: any) => a.rawDate - b.rawDate);
   }, [transactions]);
 
-  // 4. Hitung Ringkasan Total
   const summary = useMemo(() => {
     if (!transactions) return { income: 0, expense: 0, balance: 0 };
     const income = transactions.filter(t => t.type === "INCOME").reduce((acc, t) => acc + t.amount, 0);
@@ -76,7 +69,7 @@ export default function StatsPage() {
 
       <div className="p-4 space-y-6">
         
-        {/* RINGKASAN KARTU */}
+        {/* RINGKASAN */}
         <div className="grid grid-cols-2 gap-4">
             <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
                 <div className="flex items-center gap-2 mb-2 text-gray-500">
@@ -94,7 +87,7 @@ export default function StatsPage() {
             </div>
         </div>
 
-        {/* CHART 1: BAR CHART (Arus Kas) */}
+        {/* CHART 1: BAR CHART */}
         <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
           <h3 className="text-sm font-bold text-black mb-6 flex items-center gap-2">
             <CreditCard className="w-4 h-4" /> Arus Kas Bulanan
@@ -110,7 +103,7 @@ export default function StatsPage() {
                   <Tooltip 
                     cursor={{ fill: '#f5f5f5' }}
                     contentStyle={{ borderRadius: '8px', border: '1px solid #e5e5e5', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-                    formatter={(value: number) => `Rp ${value.toLocaleString("id-ID")}`}
+                    formatter={(value: any) => `Rp ${Number(value).toLocaleString("id-ID")}`}
                   />
                   <Legend verticalAlign="top" height={36} iconType="circle" />
                   <Bar dataKey="income" name="Masuk" fill="#16a34a" radius={[4, 4, 0, 0]} barSize={20} />
@@ -125,7 +118,7 @@ export default function StatsPage() {
           )}
         </div>
 
-        {/* CHART 2: PIE CHART (Kategori Pengeluaran) */}
+        {/* CHART 2: PIE CHART */}
         <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
           <h3 className="text-sm font-bold text-black mb-2 flex items-center gap-2">
             <TrendingDown className="w-4 h-4" /> Komposisi Pengeluaran
@@ -149,14 +142,13 @@ export default function StatsPage() {
                     ))}
                   </Pie>
                   <Tooltip 
-                     formatter={(value: number) => `Rp ${value.toLocaleString("id-ID")}`}
+                     formatter={(value: any) => `Rp ${Number(value).toLocaleString("id-ID")}`}
                      contentStyle={{ borderRadius: '8px', border: '1px solid #e5e5e5' }}
                   />
                   <Legend iconType="circle" layout="horizontal" verticalAlign="bottom" align="center" />
                 </PieChart>
               </ResponsiveContainer>
               
-              {/* Donut Chart */}
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[60%] text-center pointer-events-none">
                  <p className="text-[10px] text-gray-400 uppercase tracking-wide">Total</p>
                  <p className="text-sm font-bold text-black">
