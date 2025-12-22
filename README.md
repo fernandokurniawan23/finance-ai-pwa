@@ -59,11 +59,6 @@ Berikut adalah antarmuka utama aplikasi:
 * **Styling:** Tailwind CSS & Framer Motion.
 * **Architecture:** PWA (Progressive Web App) & Offline-first.
 
-<div align="center">
-  <img src="image/image_145a92.png" alt="Code Snippet" width="600"/>
-  <p><em>Implementasi sinkronisasi history chat dari Local DB ke UI state</em></p>
-</div>
-
 ---
 
 <p align="center">
