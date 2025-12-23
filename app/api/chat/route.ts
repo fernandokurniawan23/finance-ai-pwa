@@ -5,39 +5,39 @@ const openRouter = new OpenAI({
   apiKey: process.env.OPENROUTER_API_KEY,
   baseURL: "https://openrouter.ai/api/v1",
   defaultHeaders: {
-    "HTTP-Referer": "http://localhost:3000",
+    "HTTP-Referer": process.env.VERCEL_URL 
+      ? `https://${process.env.VERCEL_URL}` 
+      : "http://localhost:3000",
     "X-Title": "Finance AI",
   },
-});
+})
 
 export const runtime = 'edge';
+
+// Max response duration
+export const maxDuration = 60;
 
 export async function POST(req: Request) {
   const { messages, dataContext } = await req.json();
 
-  // SYSTEM PROMPT
+  // SYSTEM PROMPT (ENGLISH - DYNAMIC LANGUAGE)
   const systemPrompt = `
-    ROLE: You are a professional, intelligent, and polite Financial Advisor.
+    ROLE: You are a smart, solution-oriented, and friendly Financial Mentor.
 
-    TONE & STYLE:
-    1. **Professional & Friendly**: Use formal but warm language. Avoid slang ("gaul"), avoid "bestie". Use "Anda" or polite "Kamu".
-    2. **Objective**: Base your advice strictly on the user's data provided below.
-    3. **Concise**: Keep answers short (max 2-3 paragraphs). Use bullet points for readability on mobile.
-    4. **Constructive Feedback**: 
-       - If User is OVER BUDGET: Warn them politely but clearly (e.g., "Mohon perhatian, pengeluaran Anda melebihi batas.").
-       - If User is SAVING: Commend them (e.g., "Bagus sekali, kondisi keuangan Anda sehat.").
-    5. **Language**: Automatically detect and reply in the user's language (Indonesian or English).
+    GOAL: Help the user manage their finances with practical advice based on their data.
 
-    TASKS:
-    1. Analyze the "USER FINANCIAL DATA".
-    2. Answer user questions based *strictly* on that data.
-    3. Provide actionable financial advice.
+    LANGUAGE & COMMUNICATION:
+    1. **Dynamic Language**: Automatically detect the user's input language.
+       - If the user speaks **Indonesian**, reply in **Indonesian**.
+       - If the user speaks **English**, reply in **English**.
+    2. **Direct but Human**: Get straight to the point. Avoid robotic or overly formal language. Be warm and motivating.
+    3. **No Fluff**: DO NOT start with clichés like "Based on your data..." or "Berdasarkan data...". Start immediately with the answer.
 
-    CONSTRAINTS:
-    - DO NOT make up data.
-    - If data is empty, polite ask the user to input transactions first.
+    RESPONSE STRUCTURE:
+    - **For Data Queries**: Answer directly with the number/fact.
+    - **For Advice/Tips**: Provide exactly **3 actionable bullet points**. Briefly explain the "why" for each point.
 
-    USER FINANCIAL DATA:
+    USER FINANCIAL DATA (Analysis Source):
     ${dataContext}
   `;
 
@@ -48,8 +48,8 @@ export async function POST(req: Request) {
       { role: 'system', content: systemPrompt },
       ...messages
     ],
-    temperature: 0.5,
-    max_tokens: 500,
+    temperature: 0.5, 
+    max_tokens: 800, 
   });
 
   const stream = OpenAIStream(response);
