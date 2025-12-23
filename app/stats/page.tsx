@@ -1,38 +1,32 @@
-// src/app/stats/page.tsx
 "use client";
 
 import { useLiveQuery } from "dexie-react-hooks";
 import { db } from "@/lib/db";
 import { useMemo } from "react";
 import { 
-  PieChart, 
-  Pie, 
-  Cell, 
-  ResponsiveContainer, 
-  BarChart, 
-  Bar, 
-  XAxis, 
-  YAxis, 
-  Tooltip, 
-  Legend, 
-  CartesianGrid 
+  PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, 
+  XAxis, YAxis, Tooltip, Legend, CartesianGrid 
 } from "recharts";
 import { ArrowLeft, TrendingUp, TrendingDown, CreditCard } from "lucide-react";
 import Link from "next/link";
 
-// Warna chart
 const COLORS = [
-  "#3b82f6", // Blue
-  "#10b981", // Emerald
-  "#f59e0b", // Amber
-  "#ef4444", // Red
-  "#8b5cf6", // Violet
-  "#ec4899", // Pink
-  "#06b6d4", // Cyan
-  "#6366f1"  // Indigo
+  "#3b82f6", "#10b981", "#f59e0b", "#ef4444", 
+  "#8b5cf6", "#ec4899", "#06b6d4", "#6366f1"
 ];
 
-// 1. DEFINISI TIPE DATA
+// Helper: Format angka jadi pendek
+const formatCompactNumber = (number: number) => {
+  if (number >= 1000000000) {
+    return (number / 1000000000).toFixed(0) + 'M'; // Milyar
+  } else if (number >= 1000000) {
+    return (number / 1000000).toFixed(0) + 'jt'; // Juta
+  } else if (number >= 1000) {
+    return (number / 1000).toFixed(0) + 'rb'; // Ribu
+  }
+  return number.toString();
+};
+
 interface MonthlyChartData {
   name: string;
   income: number;
@@ -65,24 +59,16 @@ export default function StatsPage() {
       const date = new Date(curr.date);
       const key = date.toLocaleString("id-ID", { month: "short", year: "2-digit" });
 
-      // Inisialisasi object
       if (!acc[key]) {
-        acc[key] = { 
-          name: key, 
-          income: 0, 
-          expense: 0, 
-          rawDate: date 
-        };
+        acc[key] = { name: key, income: 0, expense: 0, rawDate: date };
       }
       
       if (curr.type === "INCOME") acc[key].income += curr.amount;
       else acc[key].expense += curr.amount;
 
       return acc;
-    // 2. TIPE DATA (Record<string, MonthlyChartData>)
     }, {} as Record<string, MonthlyChartData>);
 
-    // 3. SORTING (.getTime() untuk Date)
     return Object.values(grouped).sort((a, b) => a.rawDate.getTime() - b.rawDate.getTime());
   }, [transactions]);
 
@@ -97,7 +83,6 @@ export default function StatsPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 pb-10">
-      
       <div className="bg-white p-4 border-b border-gray-200 sticky top-0 z-10 flex items-center gap-3 shadow-sm">
         <Link href="/" className="p-2 hover:bg-gray-100 rounded-full transition-colors text-black">
           <ArrowLeft className="w-5 h-5" />
@@ -106,7 +91,8 @@ export default function StatsPage() {
       </div>
 
       <div className="p-4 space-y-6">
-        
+
+        {/* RINGKASAN */}
         <div className="grid grid-cols-2 gap-4">
             <div className="bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
                 <div className="flex items-center gap-2 mb-2 text-gray-500">
@@ -123,7 +109,8 @@ export default function StatsPage() {
                 <p className="text-lg font-bold text-black">Rp {summary.expense.toLocaleString("id-ID")}</p>
             </div>
         </div>
-
+        
+        {/* CHART 1: BAR CHART (ARUS KAS) */}
         <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
           <h3 className="text-sm font-bold text-black mb-6 flex items-center gap-2">
             <CreditCard className="w-4 h-4" /> Arus Kas Bulanan
@@ -132,18 +119,26 @@ export default function StatsPage() {
           {monthlyData.length > 0 ? (
             <div className="h-[250px] w-full text-xs">
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={monthlyData} margin={{ top: 10, right: 0, left: -20, bottom: 0 }}>
+                <BarChart data={monthlyData} margin={{ top: 10, right: 0, left: 0, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e5e5" />
                   <XAxis dataKey="name" axisLine={false} tickLine={false} dy={10} />
-                  <YAxis axisLine={false} tickLine={false} />
+                  
+                  <YAxis 
+                    axisLine={false} 
+                    tickLine={false} 
+                    width={40} 
+                    tickFormatter={formatCompactNumber}
+                    tick={{ fontSize: 10, fill: '#737373' }}
+                  />
+                  
                   <Tooltip 
                     cursor={{ fill: '#f5f5f5' }}
                     contentStyle={{ borderRadius: '8px', border: '1px solid #e5e5e5', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
                     formatter={(value) => `Rp ${Number(value).toLocaleString("id-ID")}`}
                   />
                   <Legend verticalAlign="top" height={36} iconType="circle" />
-                  <Bar dataKey="income" name="Masuk" fill="#16a34a" radius={[4, 4, 0, 0]} barSize={20} />
-                  <Bar dataKey="expense" name="Keluar" fill="#dc2626" radius={[4, 4, 0, 0]} barSize={20} />
+                  <Bar dataKey="income" name="Masuk" fill="#10b981" radius={[4, 4, 0, 0]} barSize={20} />
+                  <Bar dataKey="expense" name="Keluar" fill="#ef4444" radius={[4, 4, 0, 0]} barSize={20} />
                 </BarChart>
               </ResponsiveContainer>
             </div>
@@ -154,6 +149,7 @@ export default function StatsPage() {
           )}
         </div>
 
+        {/* CHART 2: PIE CHART (KOMPOSISI) */}
         <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
           <h3 className="text-sm font-bold text-black mb-2 flex items-center gap-2">
             <TrendingDown className="w-4 h-4" /> Komposisi Pengeluaran
