@@ -272,8 +272,18 @@ const ChatInterface = forwardRef<ChatInterfaceHandle>((_, ref) => {
                   m.role === "user" ? "flex-row-reverse" : "flex-row"
                 }`}
               >
-                <div className="w-8 h-8 rounded-full flex items-center justify-center">
-                  {m.role === "user" ? <User /> : <Sparkles />}
+                <div
+                  className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 shadow-sm ${
+                    m.role === "user"
+                      ? "bg-gray-900 ring-2 ring-gray-100"
+                      : "bg-indigo-50 border border-indigo-200"
+                  }`}
+                >
+                  {m.role === "user" ? (
+                    <User className="w-4 h-4 text-white" />
+                  ) : (
+                    <Sparkles className="w-4 h-4 text-indigo-600" />
+                  )}
                 </div>
                 <div
                   className={`px-5 py-3.5 rounded-2xl text-sm max-w-[85%] leading-relaxed shadow-sm ${
