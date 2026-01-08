@@ -76,7 +76,14 @@ export default function Home() {
               {/* Footer hanya muncul di Tracker */}
               <div className="mt-8 py-5 text-center border-t border-gray-100">
                 <div className="flex flex-col gap-0.5">
-                  <p className="text-[11px] font-medium text-gray-500">Fernando Kurniawan</p>
+                  <a
+                    href="https://github.com/fernandokurniawan23"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[11px] font-medium text-gray-500 hover:text-gray-700 transition"
+                  >
+                    Fernando Kurniawan
+                  </a>
                   <p className="text-[10px] text-gray-400">&copy; {currentYear} Finance AI.</p>
                   <p className="text-[9px] text-gray-300">Local-First Architecture</p>
                 </div>

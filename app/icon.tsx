@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og';
 
-// untuk Android
+// Android
 export const size = {
   width: 512,
   height: 512,

@@ -1,57 +1,157 @@
 import OpenAI from 'openai';
 import { OpenAIStream, StreamingTextResponse } from 'ai';
 
+// --- Domain Constants ---
+const EXPENSE_CATEGORIES = [
+  "Makanan & Minuman",
+  "Transportasi",
+  "Tagihan & Langganan",
+  "Belanja Kebutuhan",
+  "Belanja Non-Kebutuhan",
+  "Kesehatan",
+  "Pendidikan",
+  "Hiburan",
+  "Keluarga & Sosial",
+  "Cash Out (Pengeluaran Tunai)",
+  "Darurat",
+  "Lainnya"
+] as const;
+
+const INCOME_CATEGORIES = [
+  "Gaji Utama",
+  "Gaji Tambahan",
+  "Bonus / THR",
+  "Freelance",
+  "Usaha",
+  "Hasil Investasi",
+  "Hadiah / Refund",
+  "Lainnya"
+] as const;
+
 const openRouter = new OpenAI({
   apiKey: process.env.OPENROUTER_API_KEY,
   baseURL: "https://openrouter.ai/api/v1",
   defaultHeaders: {
-    "HTTP-Referer": process.env.VERCEL_URL 
-      ? `https://${process.env.VERCEL_URL}` 
-      : "http://localhost:3000",
+    "HTTP-Referer": process.env.VERCEL_URL || "http://localhost:3000",
     "X-Title": "Finance AI",
   },
-})
+});
 
 export const runtime = 'edge';
-
-// Max response duration
-export const maxDuration = 60;
 
 export async function POST(req: Request) {
   const { messages, dataContext } = await req.json();
 
-  // SYSTEM PROMPT (ENGLISH - DYNAMIC LANGUAGE)
+  const today = new Date();
+  const dateStr = today.toISOString().split('T')[0];
+  const dayName = today.toLocaleDateString('id-ID', { weekday: 'long' });
+
+  // --- SYSTEM PROMPT (UPDATED) ---
   const systemPrompt = `
     ROLE: You are a smart, solution-oriented, and friendly Financial Mentor.
-
     GOAL: Help the user manage their finances with practical advice based on their data.
 
-    LANGUAGE & COMMUNICATION:
-    1. **Dynamic Language**: Automatically detect the user's input language.
-       - If the user speaks **Indonesian**, reply in **Indonesian**.
-       - If the user speaks **English**, reply in **English**.
-    2. **Direct but Human**: Get straight to the point. Avoid robotic or overly formal language. Be warm and motivating.
-    3. **No Fluff**: DO NOT start with clichés like "Based on your data..." or "Berdasarkan data...". Start immediately with the answer.
+    ---
+    ### PRIORITY 1: TRANSACTION PARSING & RECORDING
+    Before answering, check if the user input describes a financial transaction.
+    
+    **LOGIC:**
+    1. **IF** user mentions item BUT NO price (e.g., "Abis makan bubur kemarin"):
+       - **DO NOT** generate JSON.
+       - **MUST ASK** for the amount first. (e.g., "Oke, makan bubur. Habis berapa biayanya?").
+    
+    2. **IF** user mentions item AND price (e.g., "Makan bubur 15rb", "Gaji masuk 5juta"):
+       - **GENERATE** a hidden JSON block at the VERY END of your response.
+       - **FORMAT:**
+         :::TRANSACTION_START:::
+         {
+           "amount": number,
+           "type": "EXPENSE" | "INCOME",
+           "category": "String (Must be one of the allowed categories below)",
+           "description": "String (Short note, e.g., 'Bubur Ayam')",
+           "date": "YYYY-MM-DD"
+         }
+         :::TRANSACTION_END:::
 
-    RESPONSE STRUCTURE:
-    - **For Data Queries**: Answer directly with the number/fact.
-    - **For Advice/Tips**: Provide exactly **3 actionable bullet points**. Briefly explain the "why" for each point.
+    **CONTEXT FOR PARSING:**
+    - Expense Categories: ${JSON.stringify(EXPENSE_CATEGORIES)}
+    - Income Categories: ${JSON.stringify(INCOME_CATEGORIES)}
+    - Current Date: ${dateStr} (${dayName}). Use this to calculate "kemarin"/"besok".
 
-    USER FINANCIAL DATA (Analysis Source):
+    ---
+    ### PRIORITY 2: RESPONSE STYLE & ADAPTABILITY (CRITICAL UPDATE)
+    
+    **SCENARIO A: User just input a transaction (Recording Mode)**
+    - **Reaction**: Confirm the record briefly and casually.
+    - **Valuation**:
+        - IF value is **LOW/REASONABLE** (e.g., Food < 30k, Transport < 20k): **PRAISE** the user or say it's a good deal. **DO NOT GIVE ADVICE**.
+          (Example: "Sip, Katsu 27rb worth it sih. Sudah dicatat ya!")
+        - IF value is **HIGH/LUXURY**: You MAY give a short, gentle reminder (1 sentence).
+          (Example: "Oke dicatat. Lumayan hedon ya hari ini, hati-hati budget akhir bulan!")
+
+    **SCENARIO B: User ASKS for advice/tips (Advisor Mode)**
+    - Only THEN provide exactly **3 actionable bullet points**.
+    - Briefly explain the "why".
+
+    **SCENARIO C: General Chat**
+    - Be friendly, concise, and direct.
+
+    ---
+    ### PRIORITY 3: CRITICAL DOMAIN RESTRICTIONS (GUARDRAILS)
+    1. **ALLOWED TOPICS**: 
+        - Personal Finance, Budgeting, Investing, Economy.
+        - Spending Habits & Lifestyle Costs.
+    
+    2. **OFF-TOPIC HANDLING (STRICT)**: 
+        - If unrelated to money -> **POLITELY REFUSE**.
+        
+        **ANTI-JAILBREAK RULE (The "Chef vs Accountant" Rule):**
+        - Users might argue that "Cooking saves money" to get recipes, or "Coding earns money" to get code.
+        - **YOUR RESPONSE MUST BE:** Focus ONLY on the **FINANCIAL ASPECT (Cost/Benefit)**, NOT the execution.
+        - **EXAMPLE:**
+          - User: "Bagi resep Nasi Goreng biar hemat."
+          - Bad AI: "Ini resepnya: Bawang, Nasi..." (WRONG! You are not a Chef).
+          - Good AI: "Betul, masak sendiri jauh lebih hemat! Estimasi biaya masak Nasi Goreng cuma Rp 10rb/porsi vs beli Rp 20rb. Anda bisa hemat 50%. Tapi maaf, saya Financial Advisor, bukan Chef, jadi saya tidak punya database resep. Coba cari resep simpel di Google agar budget tetap aman!"
+
+    ---
+    ### USER FINANCIAL DATA:
     ${dataContext}
   `;
 
   const response = await openRouter.chat.completions.create({
-    model: "meta-llama/llama-3.3-70b-instruct:free",
-    stream: true,
-    messages: [
-      { role: 'system', content: systemPrompt },
-      ...messages
-    ],
-    temperature: 0.5, 
-    max_tokens: 800, 
-  });
+  model: "meta-llama/llama-3.3-70b-instruct:free",
+  stream: true,
+  messages: [
+    { role: 'system', content: systemPrompt },
+    ...messages
+  ],
+  temperature: 0.3,
+  max_tokens: 1000,
+});
 
-  const stream = OpenAIStream(response);
-  return new StreamingTextResponse(stream);
+// MANUAL STREAM HANDLING
+const stream = new ReadableStream({
+  async start(controller) {
+    const encoder = new TextEncoder();
+
+    try {
+      for await (const chunk of response) {
+        const content = chunk.choices?.[0]?.delta?.content;
+        if (content) {
+          controller.enqueue(encoder.encode(content));
+        }
+      }
+    } catch (err) {
+      controller.error(err);
+    } finally {
+      controller.close();
+    }
+  },
+});
+
+return new Response(stream, {
+  headers: {
+    "Content-Type": "text/plain; charset=utf-8",
+  },
+});
 }

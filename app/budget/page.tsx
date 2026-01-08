@@ -9,12 +9,15 @@ import Link from "next/link";
 const EXPENSE_CATEGORIES = [
   "Makanan & Minuman",
   "Transportasi",
-  "Belanja Rutin",
   "Tagihan & Langganan",
-  "Hiburan",
+  "Belanja Kebutuhan",
+  "Belanja Non-Kebutuhan",
   "Kesehatan",
   "Pendidikan",
-  "Investasi",
+  "Hiburan",
+  "Keluarga & Sosial",
+  "Cash Out (Pengeluaran Tunai)",
+  "Darurat",
   "Lainnya"
 ];
 

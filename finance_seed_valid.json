@@ -1,0 +1,2816 @@
+{
+  "version": 1,
+  "timestamp": "2025-12-29T14:29:18.312Z",
+  "data": {
+    "transactions": [
+      {
+        "id": "DNCikY68P0mCKA8r2mV3E",
+        "date": "2025-01-03",
+        "amount": 725393,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "concedo eligendi derelinquo",
+        "createdAt": 1735929691694
+      },
+      {
+        "id": "y-BEuQvSfZpBJk2voW1N5",
+        "date": "2025-01-04",
+        "amount": 1361074,
+        "type": "INCOME",
+        "category": "Bonus / THR",
+        "description": "conservo ultra et",
+        "createdAt": 1735961226194
+      },
+      {
+        "id": "njEcXEnJkgeu7GT13Yvfs",
+        "date": "2025-01-05",
+        "amount": 138748,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "sufficio tamquam vae",
+        "createdAt": 1736070630091
+      },
+      {
+        "id": "eJw209HYP7zWmx7gjryQy",
+        "date": "2025-01-06",
+        "amount": 138233,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "bardus vitium aspicio",
+        "createdAt": 1736191518377
+      },
+      {
+        "id": "izigeefeGmqoq0BjpDgRZ",
+        "date": "2025-01-06",
+        "amount": 816544,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "bardus patrocinor tabesco",
+        "createdAt": 1736122514604
+      },
+      {
+        "id": "inSbw7jrJvZgdj3-Z3IGy",
+        "date": "2025-01-07",
+        "amount": 4069344,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "carcer credo eum",
+        "createdAt": 1736261962391
+      },
+      {
+        "id": "PWd0rdLGaBTkWTJtCHHrj",
+        "date": "2025-01-08",
+        "amount": 53263,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "vomica aut velociter",
+        "createdAt": 1736360822882
+      },
+      {
+        "id": "sVJJL-WTV5Tyi7cfanRce",
+        "date": "2025-01-09",
+        "amount": 4772503,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "ante excepturi delectatio",
+        "createdAt": 1736407046300
+      },
+      {
+        "id": "PICLLv0gr-tV7sv8wmboJ",
+        "date": "2025-01-11",
+        "amount": 734294,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "explicabo adversus eum",
+        "createdAt": 1736608273788
+      },
+      {
+        "id": "VzJGZzzrxGG2qfXo8cI63",
+        "date": "2025-01-11",
+        "amount": 2908758,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "denuncio demo fugit",
+        "createdAt": 1736608178757
+      },
+      {
+        "id": "noo18N1Oin2Qy3NZUF1fu",
+        "date": "2025-01-12",
+        "amount": 640340,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "denuo ventito truculenter",
+        "createdAt": 1736651617835
+      },
+      {
+        "id": "05ZxBR3wcR8ORyc39bJ4E",
+        "date": "2025-01-13",
+        "amount": 981652,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "theologus certe conduco",
+        "createdAt": 1736752591622
+      },
+      {
+        "id": "PcLGMJwH0X2n72N8DQCgp",
+        "date": "2025-01-14",
+        "amount": 4366031,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "volutabrum pel crastinus",
+        "createdAt": 1736823137912
+      },
+      {
+        "id": "MB6RCF6TpejQ5K4OV0wHB",
+        "date": "2025-01-14",
+        "amount": 554118,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "totam stillicidium damnatio",
+        "createdAt": 1736828954099
+      },
+      {
+        "id": "mHB9n4uuRPHhBsdNmK_rB",
+        "date": "2025-01-18",
+        "amount": 290331,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "cetera asperiores tenetur",
+        "createdAt": 1737190920786
+      },
+      {
+        "id": "MbafMafPjKxT0lM8uDiGB",
+        "date": "2025-01-19",
+        "amount": 1881645,
+        "type": "INCOME",
+        "category": "Investasi",
+        "description": "tergeo corroboro cavus",
+        "createdAt": 1737279772358
+      },
+      {
+        "id": "oF_KbMoC8BekNsPvreS8S",
+        "date": "2025-01-20",
+        "amount": 4100005,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "maxime sto adiuvo",
+        "createdAt": 1737401754084
+      },
+      {
+        "id": "ZSz4FKhSfA1J1l79m-SpJ",
+        "date": "2025-01-24",
+        "amount": 600563,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "arcus quasi corrumpo",
+        "createdAt": 1737747166786
+      },
+      {
+        "id": "B8nGwSbFWAGea-_yjNEpP",
+        "date": "2025-01-24",
+        "amount": 148391,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "ulterius summopere amo",
+        "createdAt": 1737721699424
+      },
+      {
+        "id": "XFONUCZq0nqhItlZC-B6Y",
+        "date": "2025-01-25",
+        "amount": 12514140,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "Gaji Bulanan PT Mencari Cinta Sejati",
+        "createdAt": 1737763200000
+      },
+      {
+        "id": "rQ9oKDxMhGI_v-9FVdLGT",
+        "date": "2025-01-26",
+        "amount": 635362,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "tum vivo auctor",
+        "createdAt": 1737855741307
+      },
+      {
+        "id": "XdBUIE6fe_yAlukpVdyrt",
+        "date": "2025-01-26",
+        "amount": 1481281,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "atque despecto cetera",
+        "createdAt": 1737859653336
+      },
+      {
+        "id": "rOl4wgYkZ665Szl-pqOaw",
+        "date": "2025-01-26",
+        "amount": 660567,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "virga ancilla victoria",
+        "createdAt": 1737856905650
+      },
+      {
+        "id": "a4Emc1ujcpdr-vqR_lORV",
+        "date": "2025-01-27",
+        "amount": 1363798,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "deripio ducimus canonicus",
+        "createdAt": 1738008911041
+      },
+      {
+        "id": "w47_T52DEtirkIPW0q0FM",
+        "date": "2025-01-27",
+        "amount": 4296330,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "suspendo thymum curriculum",
+        "createdAt": 1737940638491
+      },
+      {
+        "id": "QWUa673eMQTraGEfrFV5M",
+        "date": "2025-01-27",
+        "amount": 965894,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "textilis adstringo voluptate",
+        "createdAt": 1737991935493
+      },
+      {
+        "id": "bzQMbUbB_jOtRbAWQhI5a",
+        "date": "2025-01-27",
+        "amount": 370663,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "victoria tertius terreo",
+        "createdAt": 1737939875901
+      },
+      {
+        "id": "gJPGqmikI73vePKFP6m6M",
+        "date": "2025-01-30",
+        "amount": 371876,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "a valeo confugo",
+        "createdAt": 1738218102695
+      },
+      {
+        "id": "76HDGjSqZ4Z84VvsrCacD",
+        "date": "2025-01-31",
+        "amount": 651195,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "fugiat tripudio arbitro",
+        "createdAt": 1738328286728
+      },
+      {
+        "id": "pc2x3o4umRpFBW7oL8KKR",
+        "date": "2025-01-31",
+        "amount": 141314,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "ager cognatus caste",
+        "createdAt": 1738328873445
+      },
+      {
+        "id": "HyV0zZrySpAGUk0zW8mhJ",
+        "date": "2025-01-31",
+        "amount": 64866,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "sollers eos vereor",
+        "createdAt": 1738288010510
+      },
+      {
+        "id": "JV0Jmie4LhHN_7h085nqb",
+        "date": "2025-01-31",
+        "amount": 266022,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "abduco crepusculum vulticulus",
+        "createdAt": 1738305658997
+      },
+      {
+        "id": "LoqKzje0KR26TmBA1_2N0",
+        "date": "2025-02-04",
+        "amount": 2134474,
+        "type": "INCOME",
+        "category": "Bonus / THR",
+        "description": "beatae suspendo agnosco",
+        "createdAt": 1738658234754
+      },
+      {
+        "id": "WDxg_Q36PSYzBjgqxYVOI",
+        "date": "2025-02-07",
+        "amount": 672393,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "suffragium supra aer",
+        "createdAt": 1738972339276
+      },
+      {
+        "id": "-Q8kRoOQuPrDyQHO_QE0J",
+        "date": "2025-02-08",
+        "amount": 949965,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "celebrer attero asporto",
+        "createdAt": 1739011861655
+      },
+      {
+        "id": "D4fRZvT7SX6oSNstSRZ8T",
+        "date": "2025-02-13",
+        "amount": 3745783,
+        "type": "INCOME",
+        "category": "Hadiah / Hibah",
+        "description": "ullus ustilo summopere",
+        "createdAt": 1739490310540
+      },
+      {
+        "id": "0jUfcF8QEPIVIFqqvq8hv",
+        "date": "2025-02-13",
+        "amount": 4483965,
+        "type": "INCOME",
+        "category": "Bonus / THR",
+        "description": "aegrus cohors clam",
+        "createdAt": 1739489722920
+      },
+      {
+        "id": "Y1UU3jcni9JXSwpbDgHCi",
+        "date": "2025-02-13",
+        "amount": 311096,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "supplanto atrocitas admoveo",
+        "createdAt": 1739475367488
+      },
+      {
+        "id": "g1IhyjEB0f1olhOose4om",
+        "date": "2025-02-13",
+        "amount": 968175,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "aveho occaecati fuga",
+        "createdAt": 1739457615274
+      },
+      {
+        "id": "HAaUG7skG4rCL17udjpra",
+        "date": "2025-02-15",
+        "amount": 992748,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "thymum vindico animadverto",
+        "createdAt": 1739660697573
+      },
+      {
+        "id": "tSgfhoT7pM166r_rep3Ao",
+        "date": "2025-02-15",
+        "amount": 210624,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "arto cena atque",
+        "createdAt": 1739614622152
+      },
+      {
+        "id": "o7V4SpXv7kPhM09dEcFOJ",
+        "date": "2025-02-16",
+        "amount": 4522740,
+        "type": "INCOME",
+        "category": "Hadiah / Hibah",
+        "description": "cur desipio strenuus",
+        "createdAt": 1739732237932
+      },
+      {
+        "id": "NngFtA2MKuaETotCMvJxD",
+        "date": "2025-02-17",
+        "amount": 570582,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "neque stillicidium consequatur",
+        "createdAt": 1739820832286
+      },
+      {
+        "id": "INlcxKS1UriaSisi4u6Qk",
+        "date": "2025-02-18",
+        "amount": 2448249,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "vetus amo suggero",
+        "createdAt": 1739894448037
+      },
+      {
+        "id": "wNWeshnwAcHBdQ3MBBhil",
+        "date": "2025-02-23",
+        "amount": 501844,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "vis vos sustineo",
+        "createdAt": 1740308452427
+      },
+      {
+        "id": "-3s7-csm7qPmhXbMZZsaC",
+        "date": "2025-02-23",
+        "amount": 1465149,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "auditor decor aer",
+        "createdAt": 1740323461446
+      },
+      {
+        "id": "ZuaHBf-GUGiKMQAFLYEzj",
+        "date": "2025-02-24",
+        "amount": 2779807,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "utpote aedificium triumphus",
+        "createdAt": 1740427718907
+      },
+      {
+        "id": "f4nFhUDYpmiOBLzScHo96",
+        "date": "2025-02-25",
+        "amount": 13912391,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "Gaji Bulanan PT Mencari Cinta Sejati",
+        "createdAt": 1740441600000
+      },
+      {
+        "id": "vOzxA5hqUr3NwE2w1rVSd",
+        "date": "2025-02-26",
+        "amount": 666371,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "confero cupressus cresco",
+        "createdAt": 1740604714831
+      },
+      {
+        "id": "xXESu1F_uP53iW1se64WZ",
+        "date": "2025-02-26",
+        "amount": 77233,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "venustas ara canto",
+        "createdAt": 1740609994285
+      },
+      {
+        "id": "26zLi89b8x4mjZ6KyBQsI",
+        "date": "2025-02-28",
+        "amount": 1299871,
+        "type": "INCOME",
+        "category": "Investasi",
+        "description": "corona viridis velit",
+        "createdAt": 1740726796509
+      },
+      {
+        "id": "na5wQYjMt9ZgAy7tmhigY",
+        "date": "2025-03-01",
+        "amount": 1034225,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "tristis vero apostolus",
+        "createdAt": 1740850948987
+      },
+      {
+        "id": "szii6-4lvxYoyFwSoeF1j",
+        "date": "2025-03-01",
+        "amount": 242034,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "aer vilicus avarus",
+        "createdAt": 1740860128909
+      },
+      {
+        "id": "kDaSG9rpKDrYHAudG9Yxw",
+        "date": "2025-03-01",
+        "amount": 1945518,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "quisquam omnis officiis",
+        "createdAt": 1740863237150
+      },
+      {
+        "id": "iLvSJmBCDBKKGvZvECvyP",
+        "date": "2025-03-03",
+        "amount": 2276435,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "quisquam voluptates cedo",
+        "createdAt": 1740989658728
+      },
+      {
+        "id": "LWfwnNdHmN6B9VRF2DAP4",
+        "date": "2025-03-03",
+        "amount": 628990,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "incidunt thermae animi",
+        "createdAt": 1741038637603
+      },
+      {
+        "id": "S2TOh7fuFd7MrG0AiEQ2k",
+        "date": "2025-03-04",
+        "amount": 423735,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "auctor corpus capillus",
+        "createdAt": 1741077195045
+      },
+      {
+        "id": "2HPYKmDJbOzsmUrXXnats",
+        "date": "2025-03-07",
+        "amount": 3648319,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "socius desidero comptus",
+        "createdAt": 1741312214560
+      },
+      {
+        "id": "SjYxDR5Dyy6nhv45tZk_Q",
+        "date": "2025-03-07",
+        "amount": 614348,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "libero valeo apparatus",
+        "createdAt": 1741369380011
+      },
+      {
+        "id": "XarWaVfdz4g-27-skwHYK",
+        "date": "2025-03-08",
+        "amount": 482960,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "adeptio absens eos",
+        "createdAt": 1741429689190
+      },
+      {
+        "id": "fcU0sdlL8-1gSGixt_HeK",
+        "date": "2025-03-08",
+        "amount": 2119761,
+        "type": "INCOME",
+        "category": "Hadiah / Hibah",
+        "description": "voveo tersus aureus",
+        "createdAt": 1741402973532
+      },
+      {
+        "id": "IdQU4TVeykAemHW2h1e5j",
+        "date": "2025-03-10",
+        "amount": 211736,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "advoco averto capto",
+        "createdAt": 1741593954209
+      },
+      {
+        "id": "O6tfzGIdUdfJeoFSFNm1G",
+        "date": "2025-03-11",
+        "amount": 2483654,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "convoco ulciscor ultio",
+        "createdAt": 1741690442374
+      },
+      {
+        "id": "3TFAgZE-VskdcXWEEu8Nd",
+        "date": "2025-03-11",
+        "amount": 279003,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "dolore strues pax",
+        "createdAt": 1741652833589
+      },
+      {
+        "id": "gpTp3iZvvUR8FqdRLUkwh",
+        "date": "2025-03-12",
+        "amount": 1711318,
+        "type": "INCOME",
+        "category": "Investasi",
+        "description": "substantia nobis denego",
+        "createdAt": 1741746451203
+      },
+      {
+        "id": "EH4iI9NsNl8r1tIGY7pSD",
+        "date": "2025-03-13",
+        "amount": 3658891,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "velociter vulgo arcesso",
+        "createdAt": 1741858515656
+      },
+      {
+        "id": "qZ_OK9mfR9SHtJNSUNvFA",
+        "date": "2025-03-14",
+        "amount": 221415,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "ea demitto iure",
+        "createdAt": 1741936385413
+      },
+      {
+        "id": "fX2439iu4D9BGggmTzb1r",
+        "date": "2025-03-15",
+        "amount": 999812,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "iusto collum caelestis",
+        "createdAt": 1742038157582
+      },
+      {
+        "id": "9o1nWa5ih5JVUB2-k8du4",
+        "date": "2025-03-15",
+        "amount": 998732,
+        "type": "INCOME",
+        "category": "Investasi",
+        "description": "aspernatur claudeo sulum",
+        "createdAt": 1742060398150
+      },
+      {
+        "id": "7MjNRGabjgy5LjibLI-Yd",
+        "date": "2025-03-18",
+        "amount": 1816222,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "vorax creta pecto",
+        "createdAt": 1742317083906
+      },
+      {
+        "id": "n5y0gkg3t-jK5u4DVIKJW",
+        "date": "2025-03-18",
+        "amount": 4247356,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "cenaculum denuncio cubitum",
+        "createdAt": 1742258263704
+      },
+      {
+        "id": "1I6ImHPjq9IFVJ6yjjbft",
+        "date": "2025-03-19",
+        "amount": 532633,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "barba vox admitto",
+        "createdAt": 1742392885110
+      },
+      {
+        "id": "UAOGQZfO_HQY0tawVxmEW",
+        "date": "2025-03-25",
+        "amount": 12102287,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "Gaji Bulanan PT Mencari Cinta Sejati",
+        "createdAt": 1742860800000
+      },
+      {
+        "id": "AG0RG623f4qWcwcje9GVF",
+        "date": "2025-03-25",
+        "amount": 68012,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "iure aegre turbo",
+        "createdAt": 1742891400768
+      },
+      {
+        "id": "oxoY2puDE7ctAMoMmMpCP",
+        "date": "2025-03-30",
+        "amount": 908718,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "surculus cibo quo",
+        "createdAt": 1743325319556
+      },
+      {
+        "id": "3aTrcoyO9344WlSU5mdRJ",
+        "date": "2025-03-31",
+        "amount": 2610187,
+        "type": "INCOME",
+        "category": "Investasi",
+        "description": "tenax crur deporto",
+        "createdAt": 1743437060810
+      },
+      {
+        "id": "jRpd2ul6PWNZBOd0w0hbZ",
+        "date": "2025-04-03",
+        "amount": 530584,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "chirographum tempus taceo",
+        "createdAt": 1743648532239
+      },
+      {
+        "id": "bMKNdLM_WN9WrYBjIx_Wz",
+        "date": "2025-04-06",
+        "amount": 3944248,
+        "type": "INCOME",
+        "category": "Hadiah / Hibah",
+        "description": "atrox argentum tripudio",
+        "createdAt": 1743985849447
+      },
+      {
+        "id": "GxSbWmXxnmrEwwxJwkDTb",
+        "date": "2025-04-06",
+        "amount": 2143532,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "sordeo tantum cedo",
+        "createdAt": 1743955185706
+      },
+      {
+        "id": "r0Cm4LgZjWLmntHsKfmRO",
+        "date": "2025-04-08",
+        "amount": 357655,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "velociter cupio videlicet",
+        "createdAt": 1744114914904
+      },
+      {
+        "id": "w5LSONyWCZdmIlSPBHQqH",
+        "date": "2025-04-08",
+        "amount": 108263,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "vilicus tum tremo",
+        "createdAt": 1744137073623
+      },
+      {
+        "id": "eltg6QQB76kJs9pzNYey9",
+        "date": "2025-04-08",
+        "amount": 792300,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "laudantium caute tui",
+        "createdAt": 1744087388161
+      },
+      {
+        "id": "EuIu7DhRSYI5ewGM_qiRA",
+        "date": "2025-04-10",
+        "amount": 29600,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "supellex valeo vinitor",
+        "createdAt": 1744250832346
+      },
+      {
+        "id": "UmJyh8364V2TcV53KyeEd",
+        "date": "2025-04-10",
+        "amount": 4175285,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "fuga cunae talis",
+        "createdAt": 1744267674054
+      },
+      {
+        "id": "ioAdUkqD-YaqQQRoQQpy-",
+        "date": "2025-04-11",
+        "amount": 3438467,
+        "type": "INCOME",
+        "category": "Bonus / THR",
+        "description": "desidero utique crinis",
+        "createdAt": 1744365205334
+      },
+      {
+        "id": "xmkmwhCqOhu8pjJob6L9Y",
+        "date": "2025-04-15",
+        "amount": 188949,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "tracto ducimus verumtamen",
+        "createdAt": 1744761247328
+      },
+      {
+        "id": "q-OScWMmZY642pOCjnT8G",
+        "date": "2025-04-16",
+        "amount": 634459,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "anser carmen surculus",
+        "createdAt": 1744767093553
+      },
+      {
+        "id": "yHrGuEMiALxbsV9Le3cJz",
+        "date": "2025-04-17",
+        "amount": 224425,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "arcesso subnecto decerno",
+        "createdAt": 1744899926684
+      },
+      {
+        "id": "Jm2td2xfpRljBmAdmsP82",
+        "date": "2025-04-17",
+        "amount": 272290,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "territo tolero undique",
+        "createdAt": 1744889928085
+      },
+      {
+        "id": "maYbdppQP0TpeHT4vPxRx",
+        "date": "2025-04-18",
+        "amount": 454893,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "turpis administratio surgo",
+        "createdAt": 1744961086186
+      },
+      {
+        "id": "X0Uc4S_Ni4nSP_L1EAnwb",
+        "date": "2025-04-18",
+        "amount": 800272,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "cubitum ciminatio audentia",
+        "createdAt": 1744995571708
+      },
+      {
+        "id": "mkvv0YKZV23le8r2XifoP",
+        "date": "2025-04-21",
+        "amount": 2642746,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "thymum delectus volup",
+        "createdAt": 1745225178600
+      },
+      {
+        "id": "Ly4jZkTezBRT7kQ4aQcnk",
+        "date": "2025-04-22",
+        "amount": 84600,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "arto defleo provident",
+        "createdAt": 1745317853100
+      },
+      {
+        "id": "qPAMaIygsSVtD5yV63wS3",
+        "date": "2025-04-25",
+        "amount": 12801169,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "Gaji Bulanan PT Mencari Cinta Sejati",
+        "createdAt": 1745539200000
+      },
+      {
+        "id": "is7NFdZaSuwF2K1VOWZ7J",
+        "date": "2025-04-25",
+        "amount": 299969,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "crapula strenuus conforto",
+        "createdAt": 1745558385427
+      },
+      {
+        "id": "HXIWzl1mrspa0GQh13GUC",
+        "date": "2025-04-26",
+        "amount": 421055,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "cohaero conscendo atrox",
+        "createdAt": 1745643195946
+      },
+      {
+        "id": "C7jier_6Hiy5NKOhdty1j",
+        "date": "2025-04-27",
+        "amount": 2300037,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "spero arma aestivus",
+        "createdAt": 1745750342335
+      },
+      {
+        "id": "CbUWDReDcl4tjfM6gYTbl",
+        "date": "2025-04-29",
+        "amount": 242085,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "benigne aegrus crudelis",
+        "createdAt": 1745928375156
+      },
+      {
+        "id": "MKXE3Hq_IyczvJFEDgRwU",
+        "date": "2025-05-02",
+        "amount": 418497,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "antiquus convoco cupressus",
+        "createdAt": 1746155527642
+      },
+      {
+        "id": "rnhnpiB0jtOZRbQfeYi4B",
+        "date": "2025-05-03",
+        "amount": 1534919,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "desparatus verus audacia",
+        "createdAt": 1746291874275
+      },
+      {
+        "id": "DfNDyZk5xtV8iv5Mn0ijD",
+        "date": "2025-05-03",
+        "amount": 247926,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "una reiciendis tutis",
+        "createdAt": 1746306031255
+      },
+      {
+        "id": "JgvjC6wbgDSmLHcAMRMZa",
+        "date": "2025-05-08",
+        "amount": 831317,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "tendo aequitas quidem",
+        "createdAt": 1746680147346
+      },
+      {
+        "id": "CA5XnSoPIqYmSZajX-AYW",
+        "date": "2025-05-09",
+        "amount": 668852,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "civis anser utilis",
+        "createdAt": 1746796024017
+      },
+      {
+        "id": "1IQGV2jBaytLJOVak_iwQ",
+        "date": "2025-05-11",
+        "amount": 269085,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "cervus atqui atrocitas",
+        "createdAt": 1747000762909
+      },
+      {
+        "id": "BzEa50uiK5loZE9DRJbtH",
+        "date": "2025-05-12",
+        "amount": 4000373,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "libero vulpes dens",
+        "createdAt": 1747064170940
+      },
+      {
+        "id": "J8SAKgAJnm9oXR_mH7hw_",
+        "date": "2025-05-13",
+        "amount": 2960441,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "socius bibo utpote",
+        "createdAt": 1747132088782
+      },
+      {
+        "id": "umNbrh67MOWbVV2p5Jkhh",
+        "date": "2025-05-13",
+        "amount": 203097,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "combibo patria adsuesco",
+        "createdAt": 1747099195327
+      },
+      {
+        "id": "iJAORM2hQwyjMWsRdkeSb",
+        "date": "2025-05-14",
+        "amount": 366269,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "comburo eius vomer",
+        "createdAt": 1747198016881
+      },
+      {
+        "id": "uIHRHol1d64mF1pdROPla",
+        "date": "2025-05-16",
+        "amount": 661384,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "vomito addo suggero",
+        "createdAt": 1747382714734
+      },
+      {
+        "id": "FeI64qqjNsHOH40-qqss-",
+        "date": "2025-05-17",
+        "amount": 232895,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "ipsam officia carbo",
+        "createdAt": 1747524486383
+      },
+      {
+        "id": "v8fDHYp5l6_3sob5omKa_",
+        "date": "2025-05-19",
+        "amount": 868228,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "tener argumentum ipsam",
+        "createdAt": 1747638826503
+      },
+      {
+        "id": "fOe5ZuZxX6y57sFu7vwtK",
+        "date": "2025-05-19",
+        "amount": 2981765,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "depopulo vero ancilla",
+        "createdAt": 1747647360290
+      },
+      {
+        "id": "7qWERiECqCGH4UbYP6Qx7",
+        "date": "2025-05-21",
+        "amount": 289605,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "arcus trado conitor",
+        "createdAt": 1747853360907
+      },
+      {
+        "id": "omQYxhsEp9L3zibBKbPz6",
+        "date": "2025-05-24",
+        "amount": 671983,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "absens pauper suppellex",
+        "createdAt": 1748118925309
+      },
+      {
+        "id": "fNk4Z3GlIMhaFnO88Obxp",
+        "date": "2025-05-25",
+        "amount": 14412755,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "Gaji Bulanan PT Mencari Cinta Sejati",
+        "createdAt": 1748131200000
+      },
+      {
+        "id": "TpO1lm16rAsDPBSH36sG3",
+        "date": "2025-05-25",
+        "amount": 680552,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "usitas unus umquam",
+        "createdAt": 1748195538980
+      },
+      {
+        "id": "sTRzHsauIzuYmWK18EW4L",
+        "date": "2025-05-26",
+        "amount": 167132,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "architecto consectetur articulus",
+        "createdAt": 1748285804259
+      },
+      {
+        "id": "DMbyUWwP1RZrHKxX8bGVd",
+        "date": "2025-05-26",
+        "amount": 3678211,
+        "type": "INCOME",
+        "category": "Hadiah / Hibah",
+        "description": "terror corrumpo viduo",
+        "createdAt": 1748290430335
+      },
+      {
+        "id": "Q-Cit8o0ZEWkumr7wIXwE",
+        "date": "2025-05-26",
+        "amount": 203361,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "decens vestrum velum",
+        "createdAt": 1748250796614
+      },
+      {
+        "id": "iQGN2QdrNRdFhb2mgir9l",
+        "date": "2025-05-26",
+        "amount": 111371,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "conscendo degenero tergo",
+        "createdAt": 1748291491375
+      },
+      {
+        "id": "8EdXo_r9drur4eGOOZJZo",
+        "date": "2025-05-27",
+        "amount": 564365,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "uxor comedo dapifer",
+        "createdAt": 1748343948728
+      },
+      {
+        "id": "uhF1sA-r89Affz_aktdI6",
+        "date": "2025-05-27",
+        "amount": 131688,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "numquam verecundia defetiscor",
+        "createdAt": 1748370421457
+      },
+      {
+        "id": "c9-Y7LSzHXxDQVUYlxToF",
+        "date": "2025-05-29",
+        "amount": 661746,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "cribro auctus demens",
+        "createdAt": 1748489111190
+      },
+      {
+        "id": "WJX0UnWvLibcbBr-cTbaG",
+        "date": "2025-05-29",
+        "amount": 547749,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "vester sumptus adipisci",
+        "createdAt": 1748491749151
+      },
+      {
+        "id": "tNDYN83Pi3iBRSWaWwEuh",
+        "date": "2025-05-31",
+        "amount": 942442,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "minus advenio arma",
+        "createdAt": 1748680669418
+      },
+      {
+        "id": "_nKyN4fG-eXbGlcCXjM7U",
+        "date": "2025-06-01",
+        "amount": 815293,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "itaque concedo depulso",
+        "createdAt": 1748758944422
+      },
+      {
+        "id": "H4aNicagkyk4IlvhvnoQi",
+        "date": "2025-06-03",
+        "amount": 808565,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "spargo callide bonus",
+        "createdAt": 1748931349789
+      },
+      {
+        "id": "NbkcLWnvdPZssmiF3CeFg",
+        "date": "2025-06-05",
+        "amount": 3617488,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "curatio acceptus ago",
+        "createdAt": 1749156226498
+      },
+      {
+        "id": "gxFByw6eb4CoFkJ0-ymBd",
+        "date": "2025-06-07",
+        "amount": 481598,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "adficio degusto valde",
+        "createdAt": 1749334322728
+      },
+      {
+        "id": "Z18zDQHsYS9sxsoxuQ4ic",
+        "date": "2025-06-11",
+        "amount": 78477,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "sunt totidem repudiandae",
+        "createdAt": 1749684905647
+      },
+      {
+        "id": "hXuc2TUpDyELKh7K3EsEE",
+        "date": "2025-06-11",
+        "amount": 49616,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "desparatus abeo sto",
+        "createdAt": 1749680851533
+      },
+      {
+        "id": "z5uxTImBLwvm6RBSxDs-b",
+        "date": "2025-06-11",
+        "amount": 965122,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "animus adflicto eos",
+        "createdAt": 1749655906392
+      },
+      {
+        "id": "SHBr3sl9fImRxRof6BiqZ",
+        "date": "2025-06-12",
+        "amount": 732899,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "abstergo amplitudo acervus",
+        "createdAt": 1749742413211
+      },
+      {
+        "id": "yHBJ1pbsHE08vp1nuZCoA",
+        "date": "2025-06-12",
+        "amount": 3376048,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "doloribus temperantia totam",
+        "createdAt": 1749719837756
+      },
+      {
+        "id": "YwY6t9oUtQF7zq5I8MS2i",
+        "date": "2025-06-13",
+        "amount": 2759145,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "tot creator acsi",
+        "createdAt": 1749785072240
+      },
+      {
+        "id": "12yZLVe0_iEBSNjEeJwcg",
+        "date": "2025-06-16",
+        "amount": 699609,
+        "type": "INCOME",
+        "category": "Investasi",
+        "description": "varius vulnus pel",
+        "createdAt": 1750070714039
+      },
+      {
+        "id": "ALq4WA712318rqpaex-oQ",
+        "date": "2025-06-17",
+        "amount": 104839,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "aestas caveo thorax",
+        "createdAt": 1750199003901
+      },
+      {
+        "id": "deOLM57llzbSGO3srH5W0",
+        "date": "2025-06-18",
+        "amount": 92733,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "speculum absorbeo anser",
+        "createdAt": 1750225646453
+      },
+      {
+        "id": "JJXXIvXUDCR2ZzDPQDL8s",
+        "date": "2025-06-19",
+        "amount": 3638557,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "quam animadverto collum",
+        "createdAt": 1750296982411
+      },
+      {
+        "id": "2nGbguWlO5VZSPoh2g5Za",
+        "date": "2025-06-19",
+        "amount": 876605,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "cogito summopere stella",
+        "createdAt": 1750299299602
+      },
+      {
+        "id": "u-0g0ehmoSDf_vOivFGnA",
+        "date": "2025-06-20",
+        "amount": 131313,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "comparo aro conqueror",
+        "createdAt": 1750438536098
+      },
+      {
+        "id": "LmZflgUNb1UgGvfwq18f4",
+        "date": "2025-06-20",
+        "amount": 864923,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "defendo utrum aliquid",
+        "createdAt": 1750399632735
+      },
+      {
+        "id": "UOZ5iGzBpYWvlBpzyhkOT",
+        "date": "2025-06-21",
+        "amount": 300747,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "peccatus venustas somnus",
+        "createdAt": 1750473097934
+      },
+      {
+        "id": "tUoyFpCvBZ5v9M881r31y",
+        "date": "2025-06-23",
+        "amount": 2737368,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "totam cenaculum caste",
+        "createdAt": 1750647691683
+      },
+      {
+        "id": "0p2Ql_WgBlkX6Uh6OtHVV",
+        "date": "2025-06-24",
+        "amount": 880977,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "sollicito debilito trans",
+        "createdAt": 1750784131349
+      },
+      {
+        "id": "EJhYs1IBu1AiP_785ssE7",
+        "date": "2025-06-25",
+        "amount": 13606388,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "Gaji Bulanan PT Mencari Cinta Sejati",
+        "createdAt": 1750809600000
+      },
+      {
+        "id": "HLOEXHgUOHt6oecX_JRG2",
+        "date": "2025-06-25",
+        "amount": 470935,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "patior timidus victoria",
+        "createdAt": 1750839340736
+      },
+      {
+        "id": "imePfi6r8JyfwqndlCpBL",
+        "date": "2025-06-26",
+        "amount": 305039,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "aliquid derideo colo",
+        "createdAt": 1750974812546
+      },
+      {
+        "id": "EzThApOCUOM9V9pmh8xCu",
+        "date": "2025-06-27",
+        "amount": 725601,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "asper cometes odio",
+        "createdAt": 1750992337999
+      },
+      {
+        "id": "xObI5H-q0-QVPATfPde1S",
+        "date": "2025-06-27",
+        "amount": 298526,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "voluptate tyrannus voluptas",
+        "createdAt": 1751040665912
+      },
+      {
+        "id": "kzEZ4aVJNty1YLRYx13mm",
+        "date": "2025-06-28",
+        "amount": 3258229,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "copiose aperio succedo",
+        "createdAt": 1751073076141
+      },
+      {
+        "id": "AKWYmXbv1WeInWvXIRTEl",
+        "date": "2025-06-28",
+        "amount": 199087,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "aegrus universe adamo",
+        "createdAt": 1751087576246
+      },
+      {
+        "id": "MD9nH_OeHumxpwANguTSc",
+        "date": "2025-06-29",
+        "amount": 851546,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "vestigium aegre aranea",
+        "createdAt": 1751179234581
+      },
+      {
+        "id": "jOYDRj8eyatbf4cNG0V5y",
+        "date": "2025-06-30",
+        "amount": 1864506,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "tempora delicate beatae",
+        "createdAt": 1751267198660
+      },
+      {
+        "id": "n2kGlsgOIk3vPLL5tfolB",
+        "date": "2025-07-01",
+        "amount": 156981,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "cuppedia eligendi tabella",
+        "createdAt": 1751333445394
+      },
+      {
+        "id": "CpEC7s70smhVqJ5fdWjgy",
+        "date": "2025-07-02",
+        "amount": 878617,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "curvo nisi tollo",
+        "createdAt": 1751436097343
+      },
+      {
+        "id": "-ZpUS77DpBe5TlMUHPxfd",
+        "date": "2025-07-02",
+        "amount": 541777,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "at charisma comburo",
+        "createdAt": 1751417530458
+      },
+      {
+        "id": "REg5vvDKNW8gNLsQ2UU4D",
+        "date": "2025-07-03",
+        "amount": 525155,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "cunctatio vivo brevis",
+        "createdAt": 1751558797691
+      },
+      {
+        "id": "VW3KjgfBTvgkpXqEwEa1R",
+        "date": "2025-07-04",
+        "amount": 170191,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "adicio curtus conturbo",
+        "createdAt": 1751606021320
+      },
+      {
+        "id": "gxQwYH1TboiCD8QIfQCbi",
+        "date": "2025-07-04",
+        "amount": 363213,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "cariosus explicabo atavus",
+        "createdAt": 1751646213094
+      },
+      {
+        "id": "h82yBdJr10evuc60VswGH",
+        "date": "2025-07-05",
+        "amount": 4525572,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "contabesco verbera cotidie",
+        "createdAt": 1751691842647
+      },
+      {
+        "id": "JZFp0QLsFuZAu04g3tQeb",
+        "date": "2025-07-05",
+        "amount": 4873061,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "ago animus mollitia",
+        "createdAt": 1751695671126
+      },
+      {
+        "id": "GNY1KdDuEa2K6vHczrAdP",
+        "date": "2025-07-07",
+        "amount": 769334,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "umerus bis cupiditas",
+        "createdAt": 1751876659487
+      },
+      {
+        "id": "r002w29ZkwVpjyMGgA1RN",
+        "date": "2025-07-12",
+        "amount": 308065,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "depono ambulo admiratio",
+        "createdAt": 1752344957043
+      },
+      {
+        "id": "a5BvkKZoQZvFOfzugT9Yx",
+        "date": "2025-07-15",
+        "amount": 4265690,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "tollo textus aveho",
+        "createdAt": 1752561037469
+      },
+      {
+        "id": "LLPMDthfh1GKincC05QWT",
+        "date": "2025-07-16",
+        "amount": 937838,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "pecco adimpleo sto",
+        "createdAt": 1752706168571
+      },
+      {
+        "id": "I7wvGh8tXjGbzQkg3e9o9",
+        "date": "2025-07-17",
+        "amount": 961189,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "summisse testimonium corrigo",
+        "createdAt": 1752766139801
+      },
+      {
+        "id": "UB1dT4T5CtJfvQipZM0xE",
+        "date": "2025-07-19",
+        "amount": 1215775,
+        "type": "INCOME",
+        "category": "Bonus / THR",
+        "description": "alter voluntarius libero",
+        "createdAt": 1752917893199
+      },
+      {
+        "id": "glZ8gQwkO9BS-5fNANVLF",
+        "date": "2025-07-20",
+        "amount": 4335505,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "termes patria triduana",
+        "createdAt": 1753051633441
+      },
+      {
+        "id": "Mse0xpPq7fcdaV3g2D2pS",
+        "date": "2025-07-20",
+        "amount": 958797,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "toties voluptate aiunt",
+        "createdAt": 1752980057618
+      },
+      {
+        "id": "vAap26XzBzph4NM-oo-p2",
+        "date": "2025-07-21",
+        "amount": 754775,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "solitudo spero acerbitas",
+        "createdAt": 1753114881288
+      },
+      {
+        "id": "bOzb5YEbYjbUMBQIRuLOI",
+        "date": "2025-07-21",
+        "amount": 196652,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "vestrum voluptatem tendo",
+        "createdAt": 1753068405241
+      },
+      {
+        "id": "YakQYo-YP1Dj8uoZasK9y",
+        "date": "2025-07-21",
+        "amount": 607151,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "validus benevolentia somniculosus",
+        "createdAt": 1753100625907
+      },
+      {
+        "id": "O_Z1031brHiamyJNWbckk",
+        "date": "2025-07-21",
+        "amount": 587604,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "deficio dolor crapula",
+        "createdAt": 1753075368455
+      },
+      {
+        "id": "6J90fwaBh44Jj7Ymxs1rK",
+        "date": "2025-07-22",
+        "amount": 30259,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "cultura patria cultellus",
+        "createdAt": 1753215834651
+      },
+      {
+        "id": "auk2L2HciuBDOkDx24Ag-",
+        "date": "2025-07-23",
+        "amount": 339695,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "architecto cubicularis vae",
+        "createdAt": 1753277636383
+      },
+      {
+        "id": "YlMd2M8N__dahzu8M-uF8",
+        "date": "2025-07-24",
+        "amount": 238691,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "pecus libero animus",
+        "createdAt": 1753395896551
+      },
+      {
+        "id": "iqIzzb-mImXIiKvSvbV0F",
+        "date": "2025-07-25",
+        "amount": 14716644,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "Gaji Bulanan PT Mencari Cinta Sejati",
+        "createdAt": 1753401600000
+      },
+      {
+        "id": "XmfkFY2p_yxyZjIlNg8gt",
+        "date": "2025-07-25",
+        "amount": 188732,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "sumptus suspendo sursum",
+        "createdAt": 1753433492130
+      },
+      {
+        "id": "alqPXy3zTmcBZMTA6g6zj",
+        "date": "2025-07-26",
+        "amount": 430793,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "tui cornu cribro",
+        "createdAt": 1753503834666
+      },
+      {
+        "id": "uGDRIcmBJvhpyFV8X4uL-",
+        "date": "2025-07-27",
+        "amount": 491477,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "aut beatae vulnero",
+        "createdAt": 1753608119690
+      },
+      {
+        "id": "WBp8Ecy8no5I-10FUULYQ",
+        "date": "2025-07-28",
+        "amount": 88660,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "quo claudeo trepide",
+        "createdAt": 1753724427433
+      },
+      {
+        "id": "CNNTvmoSaUSjKebaolhH8",
+        "date": "2025-07-28",
+        "amount": 461629,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "abscido trucido cicuta",
+        "createdAt": 1753750290501
+      },
+      {
+        "id": "SB_kPGTbMdF7GZIkJlyF8",
+        "date": "2025-07-30",
+        "amount": 4135790,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "umquam nam solium",
+        "createdAt": 1753881987680
+      },
+      {
+        "id": "QCayfE8Hf9_8kQ_QpRYG7",
+        "date": "2025-08-01",
+        "amount": 907577,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "coadunatio patria tenus",
+        "createdAt": 1754030537041
+      },
+      {
+        "id": "G4Xy2txlKYGoXfIEsHVPs",
+        "date": "2025-08-03",
+        "amount": 499647,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "textilis comprehendo carpo",
+        "createdAt": 1754242830968
+      },
+      {
+        "id": "PAWepYo7oUcXrVluccVwa",
+        "date": "2025-08-03",
+        "amount": 4700203,
+        "type": "INCOME",
+        "category": "Investasi",
+        "description": "benevolentia depraedor optio",
+        "createdAt": 1754254596233
+      },
+      {
+        "id": "nuU9992PuBVgUvOu4ha4x",
+        "date": "2025-08-04",
+        "amount": 1076142,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "thesis coadunatio aliquid",
+        "createdAt": 1754286669078
+      },
+      {
+        "id": "B3ucGcxKNQ6fOWNJlkCrA",
+        "date": "2025-08-05",
+        "amount": 3763818,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "debeo delinquo uxor",
+        "createdAt": 1754417695617
+      },
+      {
+        "id": "7YqLe5Gfurn_D_FMX4aOG",
+        "date": "2025-08-07",
+        "amount": 908639,
+        "type": "INCOME",
+        "category": "Hadiah / Hibah",
+        "description": "depulso ab sapiente",
+        "createdAt": 1754558352474
+      },
+      {
+        "id": "1AqxNJFfn34yqdd1PyHCX",
+        "date": "2025-08-08",
+        "amount": 595660,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "carpo traho illum",
+        "createdAt": 1754622803854
+      },
+      {
+        "id": "IzGZVJiUD3dnRmJcnN0gc",
+        "date": "2025-08-09",
+        "amount": 2309560,
+        "type": "INCOME",
+        "category": "Hadiah / Hibah",
+        "description": "ambitus corrupti caritas",
+        "createdAt": 1754724690615
+      },
+      {
+        "id": "n_s4wdhnEnW_tDRv_YkFp",
+        "date": "2025-08-11",
+        "amount": 154634,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "triduana caelestis carcer",
+        "createdAt": 1754894347538
+      },
+      {
+        "id": "RpcU7Cnp5Z0kNksDvkxVC",
+        "date": "2025-08-11",
+        "amount": 149788,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "adipisci tenuis creptio",
+        "createdAt": 1754896998188
+      },
+      {
+        "id": "HeosBnWA4vptNji81NmlO",
+        "date": "2025-08-13",
+        "amount": 431674,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "avaritia demens triumphus",
+        "createdAt": 1755087601437
+      },
+      {
+        "id": "z_8VvWtm6CEbm2WqG6NQI",
+        "date": "2025-08-14",
+        "amount": 506557,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "tabella adinventitias defluo",
+        "createdAt": 1755213117743
+      },
+      {
+        "id": "oaRwWhEco_AnyYV9Z4py8",
+        "date": "2025-08-14",
+        "amount": 2909786,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "turbo quam contigo",
+        "createdAt": 1755195075477
+      },
+      {
+        "id": "oyE_CPtwxh5_WjM-9NHzh",
+        "date": "2025-08-15",
+        "amount": 60699,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "delicate triduana vester",
+        "createdAt": 1755275244255
+      },
+      {
+        "id": "oqBsXq8Q0Gwou3VMK_ZrZ",
+        "date": "2025-08-16",
+        "amount": 960709,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "tempus facere angelus",
+        "createdAt": 1755385214713
+      },
+      {
+        "id": "0XU1PuihGX3cFX11GcWzb",
+        "date": "2025-08-16",
+        "amount": 1364721,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "corrupti arceo paulatim",
+        "createdAt": 1755382219563
+      },
+      {
+        "id": "HPx13mrmAluFH4eXGXmHa",
+        "date": "2025-08-18",
+        "amount": 570495,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "suus sub comparo",
+        "createdAt": 1755546612341
+      },
+      {
+        "id": "ccFK6XMwptrJHat_b7dYr",
+        "date": "2025-08-18",
+        "amount": 58658,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "optio sunt color",
+        "createdAt": 1755480169505
+      },
+      {
+        "id": "41P8KJdxgBRFQZgAUspXO",
+        "date": "2025-08-19",
+        "amount": 4831055,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "temeritas tracto vorax",
+        "createdAt": 1755648000784
+      },
+      {
+        "id": "77CnQYivdM6ghlfsNuTvM",
+        "date": "2025-08-22",
+        "amount": 40605,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "attonbitus ab amet",
+        "createdAt": 1755825121916
+      },
+      {
+        "id": "pXgnDGuIkavwQWDtUzymV",
+        "date": "2025-08-23",
+        "amount": 73947,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "advenio possimus curto",
+        "createdAt": 1755920888522
+      },
+      {
+        "id": "uZkZVwGTihrnBbWvBFO0o",
+        "date": "2025-08-23",
+        "amount": 1487676,
+        "type": "INCOME",
+        "category": "Bonus / THR",
+        "description": "curto tamen campana",
+        "createdAt": 1755961555460
+      },
+      {
+        "id": "XenURlOQ6BsDif9iZSE1W",
+        "date": "2025-08-24",
+        "amount": 93806,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "damnatio tenus quam",
+        "createdAt": 1756040694846
+      },
+      {
+        "id": "IaT-s2BUZoYZ9PbiQz9xE",
+        "date": "2025-08-24",
+        "amount": 300720,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "dicta quidem vigilo",
+        "createdAt": 1756070116960
+      },
+      {
+        "id": "xgwZLOq2yDkOCs7OidvQl",
+        "date": "2025-08-24",
+        "amount": 4637001,
+        "type": "INCOME",
+        "category": "Investasi",
+        "description": "nesciunt capio dolor",
+        "createdAt": 1756060356240
+      },
+      {
+        "id": "ZbPbnjyFENtDAqAlpBQ3q",
+        "date": "2025-08-25",
+        "amount": 14254353,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "Gaji Bulanan PT Mencari Cinta Sejati",
+        "createdAt": 1756080000000
+      },
+      {
+        "id": "_YAFSFYEjocHqLKOE1Vvo",
+        "date": "2025-08-25",
+        "amount": 805318,
+        "type": "INCOME",
+        "category": "Bonus / THR",
+        "description": "dignissimos beneficium tamisium",
+        "createdAt": 1756158166740
+      },
+      {
+        "id": "oK22Fyy8DuR8xE8P2ZErq",
+        "date": "2025-08-26",
+        "amount": 4274470,
+        "type": "INCOME",
+        "category": "Investasi",
+        "description": "acies ara vinco",
+        "createdAt": 1756203410616
+      },
+      {
+        "id": "sM-1ib2p8GQvgd9rdgFZM",
+        "date": "2025-08-30",
+        "amount": 85762,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "dolores delego dens",
+        "createdAt": 1756541000063
+      },
+      {
+        "id": "-NC6s5UqLoOyEem4VrU3x",
+        "date": "2025-08-30",
+        "amount": 260669,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "celer tego deripio",
+        "createdAt": 1756578136806
+      },
+      {
+        "id": "Jv8BgxIl-Ul6MlkU72buD",
+        "date": "2025-09-04",
+        "amount": 1052366,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "illum vomito theca",
+        "createdAt": 1756980924317
+      },
+      {
+        "id": "XofMk6db2NEYR7DarWmtB",
+        "date": "2025-09-06",
+        "amount": 328531,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "considero abundans arceo",
+        "createdAt": 1757190440781
+      },
+      {
+        "id": "ci12bz1NBEmSUH9XQwl00",
+        "date": "2025-09-07",
+        "amount": 829352,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "sortitus minima amplus",
+        "createdAt": 1757209627172
+      },
+      {
+        "id": "VMk5v1smYUm6ttY-neFE0",
+        "date": "2025-09-08",
+        "amount": 95167,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "possimus maxime maxime",
+        "createdAt": 1757371020713
+      },
+      {
+        "id": "0gRl8slWCYSEW9tck0gOG",
+        "date": "2025-09-09",
+        "amount": 1615835,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "thesaurus nulla arma",
+        "createdAt": 1757418016312
+      },
+      {
+        "id": "6jkA1ZwXtZsGThpywmwXT",
+        "date": "2025-09-10",
+        "amount": 146112,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "volva tabernus atavus",
+        "createdAt": 1757526937550
+      },
+      {
+        "id": "wwRNGhHopdDTQSR97c9Dr",
+        "date": "2025-09-10",
+        "amount": 3076120,
+        "type": "INCOME",
+        "category": "Investasi",
+        "description": "attollo soleo thorax",
+        "createdAt": 1757494256856
+      },
+      {
+        "id": "TGbmQr1KW0zBtWk2WPwz4",
+        "date": "2025-09-13",
+        "amount": 3301424,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "triumphus atavus carcer",
+        "createdAt": 1757729802271
+      },
+      {
+        "id": "tu2_jw7WNXiYWxuKecGEh",
+        "date": "2025-09-14",
+        "amount": 336922,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "dolorum audax umbra",
+        "createdAt": 1757882741838
+      },
+      {
+        "id": "FBkF7ukh8OMzhe6P4Q30P",
+        "date": "2025-09-15",
+        "amount": 638249,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "tricesimus denique itaque",
+        "createdAt": 1757932374024
+      },
+      {
+        "id": "_wgz3AklU0S6nPUcOKEMD",
+        "date": "2025-09-16",
+        "amount": 758579,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "viscus sol sopor",
+        "createdAt": 1758068367101
+      },
+      {
+        "id": "sCDNdRmJd9PIDorMVU7__",
+        "date": "2025-09-21",
+        "amount": 777093,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "creator dapifer vulgaris",
+        "createdAt": 1758428071745
+      },
+      {
+        "id": "ersDLKhuxMPSVIUhVBcjh",
+        "date": "2025-09-22",
+        "amount": 2223255,
+        "type": "INCOME",
+        "category": "Investasi",
+        "description": "socius compello officiis",
+        "createdAt": 1758509958640
+      },
+      {
+        "id": "0_wa1fueepAU8_ZYd8yq0",
+        "date": "2025-09-24",
+        "amount": 15398,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "ab eum copiose",
+        "createdAt": 1758677950614
+      },
+      {
+        "id": "DgXd_uw89Mc0m8fDeTZNc",
+        "date": "2025-09-24",
+        "amount": 691396,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "soleo ustilo venio",
+        "createdAt": 1758725411950
+      },
+      {
+        "id": "dynbNCMNbKO0DSjaR_myM",
+        "date": "2025-09-24",
+        "amount": 4510017,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "stultus approbo vallum",
+        "createdAt": 1758675845122
+      },
+      {
+        "id": "mFLx_TrZacymFtsB6oPt_",
+        "date": "2025-09-25",
+        "amount": 13418919,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "Gaji Bulanan PT Mencari Cinta Sejati",
+        "createdAt": 1758758400000
+      },
+      {
+        "id": "DMccbeOSa-k8-7gXtj4uA",
+        "date": "2025-09-25",
+        "amount": 229227,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "odio tero deorsum",
+        "createdAt": 1758839078246
+      },
+      {
+        "id": "i8t35hTKrqJ9PBHK3FEqk",
+        "date": "2025-09-26",
+        "amount": 2705550,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "corrupti via vito",
+        "createdAt": 1758867724752
+      },
+      {
+        "id": "6DGo0nk1A9j2XQ8fKSBuw",
+        "date": "2025-09-27",
+        "amount": 4803665,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "utroque subito vitae",
+        "createdAt": 1758939876094
+      },
+      {
+        "id": "wIhW7ExQbyNb8iIYnTWCk",
+        "date": "2025-09-28",
+        "amount": 292852,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "trepide cohibeo tenus",
+        "createdAt": 1759046306519
+      },
+      {
+        "id": "ussAtW9XGUvHKeCKGpKU9",
+        "date": "2025-09-29",
+        "amount": 640226,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "ancilla degenero crapula",
+        "createdAt": 1759140859860
+      },
+      {
+        "id": "lOMoyKEz5-SxJs3B3nP6Q",
+        "date": "2025-09-29",
+        "amount": 1023735,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "amiculum audentia tamisium",
+        "createdAt": 1759144363872
+      },
+      {
+        "id": "BQLprnHGxcVzvEoob0fxO",
+        "date": "2025-10-01",
+        "amount": 218860,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "vomito denego virga",
+        "createdAt": 1759359251437
+      },
+      {
+        "id": "xHTGaQKKag_bvQtpmr0KT",
+        "date": "2025-10-02",
+        "amount": 1135981,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "umbra error decens",
+        "createdAt": 1759398395009
+      },
+      {
+        "id": "LRFl-Ns3X8-A372XOwPSv",
+        "date": "2025-10-02",
+        "amount": 716233,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "vesica arceo calcar",
+        "createdAt": 1759428657005
+      },
+      {
+        "id": "3ny60jt1cZ11G-e-CcZXv",
+        "date": "2025-10-03",
+        "amount": 931885,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "turpis ciminatio benigne",
+        "createdAt": 1759455843435
+      },
+      {
+        "id": "oN0tJ9sRPlu_KEMzP1iwB",
+        "date": "2025-10-04",
+        "amount": 169686,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "amitto facere saepe",
+        "createdAt": 1759624342902
+      },
+      {
+        "id": "keehY9S7tq5cyH9J2L49s",
+        "date": "2025-10-05",
+        "amount": 576751,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "vivo dicta thesaurus",
+        "createdAt": 1759647834383
+      },
+      {
+        "id": "XrUOwblu1k-ijhnkyJ5S3",
+        "date": "2025-10-05",
+        "amount": 701701,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "ipsum tripudio tabgo",
+        "createdAt": 1759706733183
+      },
+      {
+        "id": "uCHMjABggKo0jy0cxyPys",
+        "date": "2025-10-07",
+        "amount": 577377,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "repellat bellicus articulus",
+        "createdAt": 1759879619533
+      },
+      {
+        "id": "flEM-JHZrl2oS4I0l1IOX",
+        "date": "2025-10-09",
+        "amount": 885695,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "vulticulus ratione volutabrum",
+        "createdAt": 1759980796895
+      },
+      {
+        "id": "WFy1v9NAkadXF9TOv15i9",
+        "date": "2025-10-10",
+        "amount": 281349,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "illum beneficium cattus",
+        "createdAt": 1760061926677
+      },
+      {
+        "id": "T4xReD2FWEeX_JKzVzn8V",
+        "date": "2025-10-11",
+        "amount": 2061741,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "ventosus demum pauper",
+        "createdAt": 1760144547519
+      },
+      {
+        "id": "4tewVW0NanYiZTvNLqRzG",
+        "date": "2025-10-12",
+        "amount": 3963053,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "capio videlicet vivo",
+        "createdAt": 1760267128164
+      },
+      {
+        "id": "HHPKfqj1vxLfqffO4GB5e",
+        "date": "2025-10-13",
+        "amount": 746135,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "talus stillicidium animadverto",
+        "createdAt": 1760382242391
+      },
+      {
+        "id": "rxsVl0LYgx_vXxGSjfTqQ",
+        "date": "2025-10-17",
+        "amount": 705408,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "nesciunt architecto bene",
+        "createdAt": 1760696104600
+      },
+      {
+        "id": "uc2-e4K6N8CB4co-_b_Uh",
+        "date": "2025-10-18",
+        "amount": 4329562,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "texo appello enim",
+        "createdAt": 1760793529723
+      },
+      {
+        "id": "_rACoM4ZxYzo7aOqkKzF6",
+        "date": "2025-10-18",
+        "amount": 991436,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "decretum creo vero",
+        "createdAt": 1760824944984
+      },
+      {
+        "id": "Lk_ly8ogHhMl2WwZrGHtG",
+        "date": "2025-10-19",
+        "amount": 118832,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "cedo sordeo crepusculum",
+        "createdAt": 1760915151257
+      },
+      {
+        "id": "3gsb6nCDbVCsB47OUqEgp",
+        "date": "2025-10-19",
+        "amount": 701439,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "decerno speculum aestas",
+        "createdAt": 1760868577070
+      },
+      {
+        "id": "uEgRW6UhwANNtD3sQbPuX",
+        "date": "2025-10-20",
+        "amount": 90928,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "sollicito convoco quibusdam",
+        "createdAt": 1760944518222
+      },
+      {
+        "id": "vYaVTwMOsYKVDnLWszzXe",
+        "date": "2025-10-22",
+        "amount": 437161,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "tabella caute claustrum",
+        "createdAt": 1761148536679
+      },
+      {
+        "id": "F2LccO5GM2s0XgcUm5xU9",
+        "date": "2025-10-24",
+        "amount": 183846,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "ex sto tergum",
+        "createdAt": 1761308300783
+      },
+      {
+        "id": "uVndbfWsk6dIdgMJuOVBI",
+        "date": "2025-10-24",
+        "amount": 1555907,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "ante nihil aetas",
+        "createdAt": 1761285561580
+      },
+      {
+        "id": "lWFeykXdGOCudNJSI_4LD",
+        "date": "2025-10-25",
+        "amount": 14226211,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "Gaji Bulanan PT Mencari Cinta Sejati",
+        "createdAt": 1761350400000
+      },
+      {
+        "id": "fKthSz49Uw7L8P0vQBe8x",
+        "date": "2025-10-25",
+        "amount": 815338,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "adfectus copiose utique",
+        "createdAt": 1761402402782
+      },
+      {
+        "id": "q9tuv7dsRi9ARv_Izi39z",
+        "date": "2025-10-26",
+        "amount": 849824,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "vorax deficio verbera",
+        "createdAt": 1761492987937
+      },
+      {
+        "id": "H9t6x4ccnSTop7kWHZyPc",
+        "date": "2025-10-27",
+        "amount": 173816,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "solium careo tabella",
+        "createdAt": 1761531907310
+      },
+      {
+        "id": "sNrBDkJR6FyQp1822Y_cy",
+        "date": "2025-10-27",
+        "amount": 4260645,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "cibus veritas tametsi",
+        "createdAt": 1761563847882
+      },
+      {
+        "id": "IhZGBs3q8J1g-IEYrQosO",
+        "date": "2025-10-30",
+        "amount": 1857022,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "ambulo amaritudo subiungo",
+        "createdAt": 1761850761498
+      },
+      {
+        "id": "Mk1wpIzSsmfMalFBoEb2u",
+        "date": "2025-10-31",
+        "amount": 170066,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "quibusdam pecus statua",
+        "createdAt": 1761947704221
+      },
+      {
+        "id": "mCsE3j5RNfakOrps0ciE-",
+        "date": "2025-11-01",
+        "amount": 145278,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "cumque denego non",
+        "createdAt": 1761966144964
+      },
+      {
+        "id": "EHLmdnbDLxP36n4EK_WmP",
+        "date": "2025-11-01",
+        "amount": 53503,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "congregatio ipsa velum",
+        "createdAt": 1762012788224
+      },
+      {
+        "id": "7PFGK2ug7OgmYRPDdPuKm",
+        "date": "2025-11-03",
+        "amount": 752484,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "suffoco vero conatus",
+        "createdAt": 1762145792319
+      },
+      {
+        "id": "ps9uDoSvhSS_xHKtGajrR",
+        "date": "2025-11-04",
+        "amount": 150486,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "tum ciminatio comprehendo",
+        "createdAt": 1762235802737
+      },
+      {
+        "id": "-pzEHFDv5P9AiDPAqhfa4",
+        "date": "2025-11-07",
+        "amount": 654327,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "ars velum labore",
+        "createdAt": 1762524839916
+      },
+      {
+        "id": "LAamf1GKlO4eAlKsdXPZj",
+        "date": "2025-11-07",
+        "amount": 1146347,
+        "type": "INCOME",
+        "category": "Investasi",
+        "description": "cornu claudeo quod",
+        "createdAt": 1762537938643
+      },
+      {
+        "id": "r-4BBCRRSf_HMbQJpD5DW",
+        "date": "2025-11-08",
+        "amount": 277829,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "modi aperio demonstro",
+        "createdAt": 1762595894051
+      },
+      {
+        "id": "XObWU6RlfQUc9vTt4yFe8",
+        "date": "2025-11-08",
+        "amount": 10165,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "patruus tamdiu adhuc",
+        "createdAt": 1762631198045
+      },
+      {
+        "id": "UXnhYXyjoIf6jR9qPqiW1",
+        "date": "2025-11-09",
+        "amount": 4307178,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "crinis tergum videlicet",
+        "createdAt": 1762711787462
+      },
+      {
+        "id": "oSLSYQHidck3ryXKwY4U8",
+        "date": "2025-11-11",
+        "amount": 347601,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "vergo vulticulus tenax",
+        "createdAt": 1762855119546
+      },
+      {
+        "id": "UMVrcp6t3M0WnHx-4zRe1",
+        "date": "2025-11-12",
+        "amount": 525053,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "turpis cursim thesis",
+        "createdAt": 1762941585910
+      },
+      {
+        "id": "p81slcvpIaCIgrYVXn3If",
+        "date": "2025-11-15",
+        "amount": 375633,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "caute aptus tardus",
+        "createdAt": 1763173841393
+      },
+      {
+        "id": "8gPNbB1cR0I6KI1wYHb2i",
+        "date": "2025-11-17",
+        "amount": 67450,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "cunctatio defungo teneo",
+        "createdAt": 1763411661702
+      },
+      {
+        "id": "3sEk7ijuNom2klgdALDtz",
+        "date": "2025-11-19",
+        "amount": 93753,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "sodalitas civis amicitia",
+        "createdAt": 1763550767514
+      },
+      {
+        "id": "pNdXSljQtU4PpjqH0l8-1",
+        "date": "2025-11-19",
+        "amount": 15758,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "vacuus laboriosam defero",
+        "createdAt": 1763524433414
+      },
+      {
+        "id": "olswcWaiOeCqy0GpGZ17x",
+        "date": "2025-11-19",
+        "amount": 193708,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "iste consequuntur similique",
+        "createdAt": 1763556792212
+      },
+      {
+        "id": "TJwe8sSkXZkwC2YVwocNh",
+        "date": "2025-11-21",
+        "amount": 3905521,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "thymbra totidem suspendo",
+        "createdAt": 1763761377632
+      },
+      {
+        "id": "cUmaAiKDdCpoX0s3Don30",
+        "date": "2025-11-25",
+        "amount": 14030092,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "Gaji Bulanan PT Mencari Cinta Sejati",
+        "createdAt": 1764028800000
+      },
+      {
+        "id": "UcSkLzwRKKz3e12WTB2Vb",
+        "date": "2025-11-26",
+        "amount": 75043,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "apparatus confugo attollo",
+        "createdAt": 1764198446257
+      },
+      {
+        "id": "yCAH1SoJa_qE90YJEh28f",
+        "date": "2025-11-27",
+        "amount": 726499,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "cogito cruentus cumque",
+        "createdAt": 1764276877536
+      },
+      {
+        "id": "Y7L47YeVhFPG1ytRLl513",
+        "date": "2025-11-29",
+        "amount": 176297,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "via ducimus delinquo",
+        "createdAt": 1764424140847
+      },
+      {
+        "id": "DtdMFBbbEkhGoRdzP2M8F",
+        "date": "2025-11-30",
+        "amount": 476992,
+        "type": "EXPENSE",
+        "category": "Belanja Rutin",
+        "description": "addo tego turbo",
+        "createdAt": 1764511080898
+      },
+      {
+        "id": "zLNvG7t-UepvvMv3M1SIO",
+        "date": "2025-11-30",
+        "amount": 560633,
+        "type": "EXPENSE",
+        "category": "Lainnya",
+        "description": "templum uxor quibusdam",
+        "createdAt": 1764479423452
+      },
+      {
+        "id": "ZulKH5C-ifCveYwzSu5yu",
+        "date": "2025-12-02",
+        "amount": 2788183,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "deprecator porro vaco",
+        "createdAt": 1764677893461
+      },
+      {
+        "id": "1fKSdHccViDv0axkKQqFb",
+        "date": "2025-12-03",
+        "amount": 1089509,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "sonitus pecto tenetur",
+        "createdAt": 1764735427850
+      },
+      {
+        "id": "gEn_11E8-PddkOk3bO8VB",
+        "date": "2025-12-04",
+        "amount": 113498,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "torqueo conor sublime",
+        "createdAt": 1764870665270
+      },
+      {
+        "id": "lm-Xej4RAZnrdUPQVRpxM",
+        "date": "2025-12-06",
+        "amount": 522285,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "tam aranea demoror",
+        "createdAt": 1765048751133
+      },
+      {
+        "id": "zj6lwkTaOVhMcoO7b2rZz",
+        "date": "2025-12-08",
+        "amount": 443684,
+        "type": "EXPENSE",
+        "category": "Tagihan & Langganan",
+        "description": "conturbo patior canis",
+        "createdAt": 1765218039179
+      },
+      {
+        "id": "jofCMv2w2PWU8HVj_3Pi-",
+        "date": "2025-12-08",
+        "amount": 441925,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "tergum coruscus crebro",
+        "createdAt": 1765195868607
+      },
+      {
+        "id": "GEKZ2UDbIpjZqhysfS4Kq",
+        "date": "2025-12-09",
+        "amount": 110577,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "sui aqua vilitas",
+        "createdAt": 1765295334231
+      },
+      {
+        "id": "zypV6bpVgKxKQPyltCjjd",
+        "date": "2025-12-09",
+        "amount": 1249373,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "tondeo torrens argumentum",
+        "createdAt": 1765246092028
+      },
+      {
+        "id": "WCGcA_i_HOJWvLjKGrMTn",
+        "date": "2025-12-11",
+        "amount": 4864053,
+        "type": "INCOME",
+        "category": "Lainnya",
+        "description": "asper virgo harum",
+        "createdAt": 1765465923778
+      },
+      {
+        "id": "CSyJGEDgtxmtZ4glTKZDb",
+        "date": "2025-12-12",
+        "amount": 224004,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "decimus aspernatur avaritia",
+        "createdAt": 1765579905825
+      },
+      {
+        "id": "R-9RelEdus82FdqTTymNs",
+        "date": "2025-12-12",
+        "amount": 4412027,
+        "type": "EXPENSE",
+        "category": "Investasi",
+        "description": "catena defessus certe",
+        "createdAt": 1765538895384
+      },
+      {
+        "id": "fzYziN6uLpVOzL1MEfZ9L",
+        "date": "2025-12-13",
+        "amount": 561354,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "deleniti terga conduco",
+        "createdAt": 1765670041452
+      },
+      {
+        "id": "ybVTd5KkzIWHYWemqu7K6",
+        "date": "2025-12-13",
+        "amount": 195800,
+        "type": "EXPENSE",
+        "category": "Transportasi",
+        "description": "uterque stabilis desino",
+        "createdAt": 1765600481036
+      },
+      {
+        "id": "uiR-q2Pq94jC_pCf5GKCN",
+        "date": "2025-12-13",
+        "amount": 2088705,
+        "type": "INCOME",
+        "category": "Freelance / Side Job",
+        "description": "succedo nisi casso",
+        "createdAt": 1765606548299
+      },
+      {
+        "id": "NAfwshSkijBPaUBNtND6h",
+        "date": "2025-12-17",
+        "amount": 547477,
+        "type": "EXPENSE",
+        "category": "Hiburan",
+        "description": "vorax alo studio",
+        "createdAt": 1766006165312
+      },
+      {
+        "id": "WGi0REe1CjPAs_X4khpL9",
+        "date": "2025-12-19",
+        "amount": 4563555,
+        "type": "INCOME",
+        "category": "Hadiah / Hibah",
+        "description": "unus contigo peccatus",
+        "createdAt": 1766149577200
+      },
+      {
+        "id": "VRVR6xUQs4ngsYWvyPLgc",
+        "date": "2025-12-20",
+        "amount": 4971116,
+        "type": "INCOME",
+        "category": "Hadiah / Hibah",
+        "description": "quidem cetera eveniet",
+        "createdAt": 1766237483699
+      },
+      {
+        "id": "fUdMHtBBWoHjXMgILYUM_",
+        "date": "2025-12-24",
+        "amount": 575685,
+        "type": "EXPENSE",
+        "category": "Pendidikan",
+        "description": "ter via cognatus",
+        "createdAt": 1766559428261
+      },
+      {
+        "id": "D6yIGpXiI24kssLIz0J5z",
+        "date": "2025-12-25",
+        "amount": 14914701,
+        "type": "INCOME",
+        "category": "Gaji Utama",
+        "description": "Gaji Bulanan PT Mencari Cinta Sejati",
+        "createdAt": 1766620800000
+      },
+      {
+        "id": "YiLt3SWBTHGYRldS5sp7G",
+        "date": "2025-12-25",
+        "amount": 4586765,
+        "type": "INCOME",
+        "category": "Investasi",
+        "description": "tonsor auditor optio",
+        "createdAt": 1766692457551
+      },
+      {
+        "id": "FS5WjiP0kBPmrsuWT1Bih",
+        "date": "2025-12-25",
+        "amount": 74272,
+        "type": "EXPENSE",
+        "category": "Makanan & Minuman",
+        "description": "complectus comprehendo teres",
+        "createdAt": 1766693289105
+      },
+      {
+        "id": "vmwxb4H0_r9hfOgxJyKjp",
+        "date": "2025-12-25",
+        "amount": 264190,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "capitulus maxime conculco",
+        "createdAt": 1766651493027
+      },
+      {
+        "id": "f_kI3rpkiLrIDupb5_QQJ",
+        "date": "2025-12-29",
+        "amount": 421699,
+        "type": "EXPENSE",
+        "category": "Kesehatan",
+        "description": "amo iure armarium",
+        "createdAt": 1767020401797
+      }
+    ]
+  }
+}

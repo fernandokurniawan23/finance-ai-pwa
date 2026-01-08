@@ -6,21 +6,26 @@ import { db } from "../lib/db";
 const EXPENSE_CATEGORIES = [
   "Makanan & Minuman",
   "Transportasi",
-  "Belanja Rutin",
   "Tagihan & Langganan",
-  "Hiburan",
+  "Belanja Kebutuhan",
+  "Belanja Non-Kebutuhan",
   "Kesehatan",
   "Pendidikan",
-  "Investasi",
+  "Hiburan",
+  "Keluarga & Sosial",
+  "Cash Out (Pengeluaran Tunai)",
+  "Darurat",
   "Lainnya"
 ];
 
 const INCOME_CATEGORIES = [
   "Gaji Utama",
+  "Gaji Tambahan",
   "Bonus / THR",
-  "Freelance / Side Job",
-  "Investasi",
-  "Hadiah / Hibah",
+  "Freelance",
+  "Usaha",
+  "Hasil Investasi",
+  "Hadiah / Refund",
   "Lainnya"
 ];
 
