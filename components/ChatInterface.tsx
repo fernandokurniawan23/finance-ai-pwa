@@ -35,7 +35,7 @@ type ChatMessage = {
    CONSTANTS
 ================================ */
 const PARSE_REGEX = /:::TRANSACTION_START:::([\s\S]*?):::TRANSACTION_END:::/;
-const RENDER_CLEAN_REGEX = /:::TRANSACTION_START:::[\s\S]*/g;
+const RENDER_CLEAN_REGEX = /:::TRANSACTION_START:::[\s\S]*?:::TRANSACTION_END:::/g;
 
 /* ===============================
    HELPERS
@@ -51,6 +51,13 @@ const getAnonId = () => {
     localStorage.setItem("anon_id", id);
   }
   return id;
+};
+
+const sanitizeStreamingMessage = (content: string): string => {
+  if (content.includes(":::TRANSACTION_START:::")) {
+    return content.split(":::TRANSACTION_START:::")[0].trim();
+  }
+  return content;
 };
 
 /* ===============================
@@ -69,6 +76,8 @@ const ChatInterface = forwardRef<ChatInterfaceHandle>((_, ref) => {
   const [context, setContext] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [saveStatus, setSaveStatus] = useState<string | null>(null);
+  const [draftTx, setDraftTx] = useState<Transaction | null>(null);
+  const [isDraftPending, setIsDraftPending] = useState(false);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const lastTranscriptRef = useRef<string>("");
@@ -91,12 +100,18 @@ const ChatInterface = forwardRef<ChatInterfaceHandle>((_, ref) => {
 
       const history = await db.chats.orderBy("createdAt").toArray();
       if (history.length > 0) {
-        const formatted: ChatMessage[] = history.map((h) => ({
-          id: h.id?.toString() || crypto.randomUUID(),
-          role: h.role as "user" | "assistant",
-          content: h.content,
-        }));
-        setMessages(formatted);
+        setMessages(
+          history
+            .filter(
+              (h): h is typeof h & { role: "user" | "assistant" } =>
+                h.role === "user" || h.role === "assistant"
+            )
+            .map((h) => ({
+              id: h.id?.toString() || crypto.randomUUID(),
+              role: h.role,
+              content: h.content,
+            }))
+        );
       }
     };
     init();
@@ -107,7 +122,7 @@ const ChatInterface = forwardRef<ChatInterfaceHandle>((_, ref) => {
   ================================ */
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, isLoading, saveStatus]);
+  }, [messages, isLoading, saveStatus, draftTx]);
 
   /* ===============================
      CLEAR CHAT
@@ -117,6 +132,7 @@ const ChatInterface = forwardRef<ChatInterfaceHandle>((_, ref) => {
       if (messages.length > 0 && confirm("Delete conversation history?")) {
         await db.chats.clear();
         setMessages([]);
+        setDraftTx(null);
       }
     },
   }));
@@ -130,6 +146,7 @@ const ChatInterface = forwardRef<ChatInterfaceHandle>((_, ref) => {
 
     resetTranscript();
     lastTranscriptRef.current = "";
+    setDraftTx(null);
 
     const userMessage: ChatMessage = {
       id: crypto.randomUUID(),
@@ -146,6 +163,7 @@ const ChatInterface = forwardRef<ChatInterfaceHandle>((_, ref) => {
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
     setIsLoading(true);
+
 
     const res = await fetch("/api/chat", {
       method: "POST",
@@ -168,6 +186,7 @@ const ChatInterface = forwardRef<ChatInterfaceHandle>((_, ref) => {
         },
       ]);
       setIsLoading(false);
+      setIsDraftPending(false);
       return;
     }
 
@@ -198,6 +217,7 @@ const ChatInterface = forwardRef<ChatInterfaceHandle>((_, ref) => {
     }
 
     setIsLoading(false);
+    setIsDraftPending(false);
 
     await db.chats.add({
       role: "assistant",
@@ -206,23 +226,42 @@ const ChatInterface = forwardRef<ChatInterfaceHandle>((_, ref) => {
     });
 
     const match = assistantText.match(PARSE_REGEX);
-    if (match && match[1]) {
+    if (match?.[1]) {
       try {
         const raw = JSON.parse(match[1]);
-        const tx: Transaction = {
+
+        setIsDraftPending(true); // aktifkan HANYA kalau memang ada draft
+
+        setDraftTx({
           amount: Number(raw.amount),
           type: raw.type,
           category: raw.category,
           description: raw.description,
           date: raw.date,
           createdAt: Date.now(),
-        };
-        await db.transactions.add(tx);
-        setContext(await getFinancialContext());
-        setSaveStatus(`Saved: ${tx.description}`);
-        setTimeout(() => setSaveStatus(null), 3000);
-      } catch {}
+        });
+      } catch {
+        setDraftTx(null);
+      }
+    } else {
+      setIsDraftPending(false);
     }
+  };
+
+  /* ===============================
+     SAVE DRAFT (EXPLICIT APPROVAL)
+  ================================ */
+  const handleSaveDraft = async () => {
+    if (!draftTx) return;
+    await db.transactions.add(draftTx);
+    setContext(await getFinancialContext());
+    setSaveStatus(`Saved: ${draftTx.description}`);
+    setDraftTx(null);
+    setTimeout(() => setSaveStatus(null), 3000);
+  };
+
+  const handleDiscardDraft = () => {
+    setDraftTx(null);
   };
 
   const handleSuggestion = (text: string) => setInput(text);
@@ -292,10 +331,105 @@ const ChatInterface = forwardRef<ChatInterfaceHandle>((_, ref) => {
                       : "bg-white text-gray-800 border rounded-bl-none"
                   }`}
                 >
-                  {sanitizeMessage(m.content)}
+                  {isLoading && m.role === "assistant"
+                    ? sanitizeStreamingMessage(m.content)
+                    : sanitizeMessage(m.content)}
                 </div>
               </div>
             ))}
+
+            {isDraftPending && !draftTx && (
+              <div className="ml-11 text-xs text-gray-500 animate-pulse">
+                Menyiapkan draft transaksi…
+              </div>
+            )}
+
+            {draftTx && (
+              <div className="ml-11 max-w-[85%] bg-white border border-indigo-200 rounded-2xl shadow-sm p-4 space-y-3">
+                <div className="text-xs font-semibold text-indigo-600">
+                  Draft Transaksi
+                </div>
+
+                <select
+                  className="w-full px-3 py-2 text-sm text-black bg-gray-50 border border-gray-300 rounded-xl
+                            focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500"
+                  value={draftTx.category}
+                  onChange={(e) =>
+                    setDraftTx({ ...draftTx, category: e.target.value })
+                  }
+                >
+                  {/* EXPENSE */}
+                  {draftTx.type === "EXPENSE" && (
+                    <>
+                      <option value="Makanan & Minuman">Makanan & Minuman</option>
+                      <option value="Transportasi">Transportasi</option>
+                      <option value="Tagihan & Langganan">Tagihan & Langganan</option>
+                      <option value="Belanja Kebutuhan">Belanja Kebutuhan</option>
+                      <option value="Belanja Non-Kebutuhan">Belanja Non-Kebutuhan</option>
+                      <option value="Kesehatan">Kesehatan</option>
+                      <option value="Pendidikan">Pendidikan</option>
+                      <option value="Hiburan">Hiburan</option>
+                      <option value="Keluarga & Sosial">Keluarga & Sosial</option>
+                      <option value="Cash Out (Pengeluaran Tunai)">Cash Out (Pengeluaran Tunai)</option>
+                      <option value="Darurat">Darurat</option>
+                      <option value="Lainnya">Lainnya</option>
+                    </>
+                  )}
+
+                  {/* INCOME */}
+                  {draftTx.type === "INCOME" && (
+                    <>
+                      <option value="Gaji Utama">Gaji Utama</option>
+                      <option value="Gaji Tambahan">Gaji Tambahan</option>
+                      <option value="Bonus / THR">Bonus / THR</option>
+                      <option value="Freelance">Freelance</option>
+                      <option value="Usaha">Usaha</option>
+                      <option value="Hasil Investasi">Hasil Investasi</option>
+                      <option value="Hadiah / Refund">Hadiah / Refund</option>
+                      <option value="Lainnya">Lainnya</option>
+                    </>
+                  )}
+                </select>
+
+                <input
+                  className="w-full px-3 py-2 text-sm text-black bg-gray-50 border border-gray-300 rounded-xl
+                    focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500"
+                  value={draftTx.description}
+                  onChange={(e) =>
+                    setDraftTx({ ...draftTx, description: e.target.value })
+                  }
+                />
+
+                <input
+                  type="number"
+                  className="w-full px-3 py-2 text-sm text-black bg-gray-50 border border-gray-300 rounded-xl
+                    focus:outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500"
+                  value={draftTx.amount}
+                  onChange={(e) =>
+                    setDraftTx({ ...draftTx, amount: Number(e.target.value) })
+                  }
+                />
+
+                <div className="flex gap-2">
+                  <button
+                    onClick={handleSaveDraft}
+                    className="px-4 py-2 bg-indigo-600 text-white rounded-xl text-xs shadow-sm
+                              hover:bg-indigo-700 transition"
+                  >
+                    Simpan Transaksi
+                  </button>
+
+                  <button
+                    onClick={handleDiscardDraft}
+                    className="px-4 py-2 bg-gray-100 text-black rounded-xl text-xs
+                              border border-gray-300 hover:bg-gray-200 transition"
+                  >
+                    Batal
+                  </button>
+                </div>
+              </div>
+            )}
+
             {isLoading && <div className="ml-11 animate-pulse">...</div>}
             <div ref={messagesEndRef} />
           </div>

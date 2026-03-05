@@ -144,7 +144,7 @@ export default function StatsPage() {
                   Smart Forecast
                 </h3>
                 <p className="text-[11px] text-gray-500 mt-1 max-w-[200px] leading-snug">
-                  Estimasi harian.
+                  Estimasi harian (Median).
                 </p>
               </div>
               <div className="text-right">
