@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 // METADATA
 export const metadata: Metadata = {
   title: "Finance AI",
-  description: "Smart Finance Tracker powered by Llama 3",
+  description: "Smart Finance Tracker powered by AI",
   authors: [{ name: "Fernando Kurniawan" }],
   manifest: "/manifest.json",
   icons: {

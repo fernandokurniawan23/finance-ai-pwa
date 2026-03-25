@@ -182,7 +182,7 @@ const ChatInterface = forwardRef<ChatInterfaceHandle>((_, ref) => {
           id: crypto.randomUUID(),
           role: "assistant",
           content:
-            "Batas konsultasi harian Anda telah tercapai. Silakan coba kembali besok.",
+            "Sistem AI sedang sibuk (limit provider). Silakan coba beberapa saat lagi.",
         },
       ]);
       setIsLoading(false);

@@ -1,8 +1,5 @@
 import OpenAI from "openai";
 
-const usageMap = new Map<string, { count: number; date: string }>();
-const DAILY_ADVISOR_LIMIT = 10;
-
 export const runtime = "edge";
 
 /* ===============================
@@ -11,24 +8,6 @@ export const runtime = "edge";
 type ChatMessage = {
   role: "user" | "assistant" | "system";
   content: string;
-};
-
-/* ===============================
-   ADVISOR MODE DETECTION
-================================ */
-const isAdvisorQuestion = (messages: ChatMessage[]) => {
-  const last = messages[messages.length - 1]?.content?.toLowerCase() || "";
-  const keywords = [
-    "gimana",
-    "bagaimana",
-    "tips",
-    "saran",
-    "menurut",
-    "apakah",
-    "baiknya",
-    "haruskah",
-  ];
-  return keywords.some((k) => last.includes(k));
 };
 
 /* ===============================
@@ -88,29 +67,6 @@ export async function POST(req: Request) {
     const now = new Date();
     const todayStr = now.toISOString().split("T")[0];
     const dayName = now.toLocaleDateString("id-ID", { weekday: "long" });
-
-    /* ===== LIMIT CHECK ===== */
-    const advisorMode = isAdvisorQuestion(messages);
-
-    if (advisorMode) {
-      const userData = usageMap.get(anonId);
-
-      if (!userData || userData.date !== todayStr) {
-        usageMap.set(anonId, { count: 1, date: todayStr });
-      } else {
-        if (userData.count >= DAILY_ADVISOR_LIMIT) {
-          return new Response(
-            "Batas konsultasi harian Anda telah tercapai. Silakan coba kembali besok.",
-            { status: 429 }
-          );
-        }
-
-        usageMap.set(anonId, {
-          count: userData.count + 1,
-          date: todayStr,
-        });
-      }
-    }
     
     /* ===== SYSTEM PROMPT ===== */
 const systemPrompt = `
@@ -238,7 +194,7 @@ If off-topic → politely refuse.
 
     try {
       response = await openRouter.chat.completions.create({
-        model: "meta-llama/llama-3.3-70b-instruct:free",
+        model: "openrouter/free",
         stream: true,
         messages: [
           { role: "system", content: systemPrompt },
